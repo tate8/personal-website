@@ -67,23 +67,6 @@ opacity: 38%;
 }
 
 
-
-#projects .container .image-1, #projects .container-expanded .image-1 {
-  background-image: url("../images/code.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#projects .container .image-2, #projects .container-expanded .image-2 {
-  background-image: url("../images/code1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#projects .container .image-3, #projects .container-expanded .image-3 {
-  background-image: url("../images/code2.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 #projects .container {
   position: relative;
   width: 75vw;
@@ -92,7 +75,7 @@ opacity: 38%;
   max-height: 500px;
   margin: 0 auto 20vh auto;
   background: #eee;
-  /* box-shadow: 5px 5px 5px black; */
+  padding: 0;
 }
 
 #projects .fullscreen{
@@ -104,8 +87,28 @@ opacity: 38%;
   height: 110vh; 
   left: 0; 
 }
+#projects .fullscreen .image-1 {
+  background-image: url("../images/rr.png") !important;
+  background-size: contain !important;
+  background-position: center !important;
+}
+
+#projects .fullscreen .image-2 {
+  background-image: url("../images/code1.jpg") !important;
+  background-size: contain !important;
+  background-position: center !important;
+}
+#projects .fullscreen .image-3 {
+  background-image: url("../images/code2.jpg") !important;
+  background-size: contain !important;
+  background-position: center !important;
+}
+
 #projects .fullscreen-img {
   top: 25%;
+  /* background-image: url("../images/rr.png") !important;
+  background-size: contain !important;
+  background-position: center !important; */
 }
 
 #projects .image-container {
@@ -115,11 +118,20 @@ opacity: 38%;
   max-width: 700px;
   max-height: 500px;
   margin: 0 auto 20vh auto;
-  background: #eee;
+  background: #2f2f2f;
   overflow: hidden;
   z-index: 2;
-}
 
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; 
+}
+.image-container:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
  .text {
   font-family: 'Monument Extended', sans-serif;
   font-weight: bold;
@@ -155,28 +167,28 @@ opacity: 38%;
 }
 .expanded-detail {
   font-family: 'STIX Two Text', serif;
-  text-align: right;
+  text-align: left;
   color: #eee;
   opacity: 60%;
   font-size: 1.5rem;
   position: absolute;
   z-index: 6;
   max-width: 20vw;
-  left: 10vw;
+  left: 3vw;
   top: 30vh;
 }
-.expanded-detail-image {
-  background-image: url("../images/code.jpg");
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  width: 40vw;
-  height: 30vh;
-  max-width: 400px;
-  max-height: 300px;
-  right: 6vw;
-  top: 30vh;
-}
+  /* .expanded-detail-image {
+    background-image: url("../images/code.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 40vw;
+    height: 30vh;
+    max-width: 400px;
+    max-height: 300px;
+    right: 6vw;
+    top: 30vh;
+  } */
 .hide {
   display: none;
 }
@@ -351,8 +363,17 @@ top: 0;
   visibility: hidden;
   display: none;
 }
-
-
+.nav-contact {
+  font-size: 2rem;
+  font-family: 'STIX Two Text', serif;	
+   color: #2f2f2f;
+   mix-blend-mode: difference;
+}
+.nav-contact:hover {
+  color: #2f2f2f;
+  cursor: pointer;
+  text-decoration: underline !important;
+}
 
 
 
@@ -366,7 +387,6 @@ top: 0;
 
 .circle-button{
   font-family: 'STIX Two Text', serif;	color: #eee;
-
   font-size: 1.5rem;
   border-radius: 50%;
 	transition: all 0.2s ease;
@@ -378,7 +398,6 @@ top: 0;
 }
 
 .grow-container{
-
   display: inline-block;
   margin: 1em;
 }
@@ -514,7 +533,20 @@ padding: 50px;
   padding-top: 40px;
   color: #eee;
 }
-
+.about .skill-icons {
+  color: #eee;
+  font-size: 3rem;
+  margin-top: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .skill-icons * {
+  padding: 3vw;
+}
+.about .skill-icons *:hover {
+  opacity: 100%;
+}
 @media screen and (max-width: 575px) {
   .items-section.item-one {
       border-bottom: 1px solid darkgray;

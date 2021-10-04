@@ -18,7 +18,7 @@ class Smooth {
     this.bindMethods()
 
     this.data = {
-      ease: 0.1,
+      ease: .15,
       current: 0,
       last: 0,
       rounded: 0
@@ -136,116 +136,69 @@ class Smooth {
   }
 }
 
-  new Smooth()
-
-
-$(document).ready(function () {
-  $(".image-container").on("mouseenter", function() {
-    $(this).animate({  width: "-=30", height: "-=30" }, 200);
-});
-
-$(".image-container").on("mouseleave", function() {
-    $(this).animate({ width: "+=30", height: "+=30" }, 200);
-});
+  // new Smooth()
 
 
 
-  $(".container").on("click", function() {
-      $(this).toggleClass('fullscreen');
-      $(".image-container").toggleClass('fullscreen-img');
-      $(this).find(".text").toggleClass("hide");
-      $(this).children(".expanded-text").toggleClass("hide");
-      $(this).children(".expanded-detail").toggleClass("hide");
-      $(this).children(".expanded-detail-image").toggleClass("hide");
+
+
+$(document).ready(function() {
+    
+  /* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+  
+      /* Check the location of each desired element */
+      $('.fade').each( function(i){
+          
+          var bottom_of_object = $(this).position().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          /* If the object is completely visible in the window, fade it it */
+          if( bottom_of_window > bottom_of_object - 800 ){
+              
+              $(this).animate({'opacity':'1'}, 100);
+                  
+          }
+          
+      }); 
+
   });
-});
 
-
-
-
-
-
+  // on project image click
+  $(".container").on("click", function() {
+    $(this).toggleClass('fullscreen');
+    $(".image-container").toggleClass('fullscreen-img');
+    $(this).find(".text").toggleClass("hide");
+    $(this).children(".expanded-text").toggleClass("hide");
+    $(this).children(".expanded-detail").toggleClass("hide");
+    $(this).children(".expanded-detail-image").toggleClass("hide");
+  });
 
 
 
 let atScroll = false;
 let parallaxTitle = document.querySelectorAll(".parallax-title");
-let slightMovementItem = document.querySelectorAll(".slight-movement");
 
 
 const scrollProgress = () => {
-    atScroll = true;
+  atScroll = true;
 };
 
 const raf = () => {
-    if (atScroll) {
-      $(".parallax-title").each(function(idx) {
-        let item = parallaxTitle[idx]
-
-        let distFromTop = item.getBoundingClientRect().top;
-        item.style.transform = "translateX(" + distFromTop / 8 + "%)";
-    });
-
-    $(".slight-movement").each(function(idx) {
-      let item = slightMovementItem[idx]
+  if (atScroll) {
+    $(".parallax-title").each(function(idx) {
+      let item = parallaxTitle[idx]
 
       let distFromTop = item.getBoundingClientRect().top;
-      item.style.transform = "translateY(" + distFromTop / 15 + "%)";
+      item.style.transform = "translateX(" + distFromTop / 8 + "%)";
   });
-
-    }
-    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
 };
 
 requestAnimationFrame(raf);
 window.addEventListener("scroll", scrollProgress);
 
-// $(window).scroll(function() {
-//   let viewportTop = $(window).scrollTop();
-//   let viewportBottom = viewportTop + $(window).height();
 
-
-//   let scrollY = window.scrollY;
-//   aboutSection.style.bottom = scrollY * 0.06 + "px";
-
-
-
-    // $(".text-box").each(function(idx) {
-    //     let $this = $(this);
-    //     let elementTop = $this.offset().top;
-    //     let elementBottom = elementTop + $this.outerHeight();
-    //     let item = document.getElementsByClassName("text-box")[idx]
-    //     if (elementBottom > viewportTop && elementTop < viewportBottom)
-    //     {
-    //         let distFromTop = item.getBoundingClientRect().top;
-    //         item.style.right = (distFromTop * 0.08) + "px";
-    //     }
-    // });
-
-//     $(".project-number").each(function(idx) {
-//       let $this = $(this);
-//       let elementTop = $this.offset().top;
-//       let elementBottom = elementTop + $this.outerHeight();
-//       let item = document.getElementsByClassName("project-number")[idx]
-//       if (elementBottom > viewportTop && elementTop < viewportBottom)
-//       {
-//           let distFromTop = item.getBoundingClientRect().top;
-//           item.style.top = (distFromTop * 0.08) + "px";
-//       }
-//     });
-
-//     $(".movement-small").each(function(idx) {
-//       let $this = $(this);
-//       let elementTop = $this.offset().top;
-//       let elementBottom = elementTop + $this.outerHeight();
-//       let item = document.getElementsByClassName("movement-small")[idx]
-//       if (elementBottom > viewportTop && elementTop < viewportBottom)
-//       {
-//           let distFromTop = item.getBoundingClientRect().top;
-//           item.style.top = (distFromTop * 0.04) + "px";
-//       }
-//     });
-
-
-// });
-
+  
+});
