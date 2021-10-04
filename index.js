@@ -172,7 +172,13 @@ $(document).ready(function() {
     $(this).children(".expanded-text").toggleClass("hide");
     $(this).children(".expanded-detail").toggleClass("hide");
     $(this).children(".expanded-detail-image").toggleClass("hide");
+    $(this).children(".project-github-button").toggleClass("hide");
   });
+
+  $(".submit-contact-form").on("click", () => {
+    console.log("here")
+    $("#submit-form").reset();
+  })
 
 
 

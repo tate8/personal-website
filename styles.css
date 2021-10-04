@@ -181,20 +181,17 @@ opacity: 38%;
   left: 3vw;
   top: 30vh;
 }
-  /* .expanded-detail-image {
-    background-image: url("../images/code.jpg");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 40vw;
-    height: 30vh;
-    max-width: 400px;
-    max-height: 300px;
-    right: 6vw;
-    top: 30vh;
-  } */
+.project-github-button {
+  position: absolute;
+  right: 20vw;
+  top: 50vh;
+  color: #eee;
+  font-size: 3vw;
+  z-index: 8;
+}
 .hide {
   display: none;
+  z-index: -7;
 }
 
  .text-dark {
@@ -636,6 +633,7 @@ padding: 50px;
 @media only screen and (max-device-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
 
+
   .nav-contact {
     font-size: 1rem;
     font-family: 'STIX Two Text', serif;	
@@ -777,6 +775,12 @@ textarea::placeholder {
 }
 .expanded-detail-image {
   display: none;
+}
+.project-github-button {
+  right: 5vw;
+  top: 5vw;
+  font-size: 2rem;
+  z-index: 8;
 }
 }
 @media only screen and (max-device-width: 360px) {
