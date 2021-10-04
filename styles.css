@@ -88,18 +88,18 @@ opacity: 38%;
   left: 0; 
 }
 #projects .fullscreen .image-1 {
-  background-image: url("../images/rr.png") !important;
+  background-image: url("./images/rr.png") !important;
   background-size: contain !important;
   background-position: center !important;
 }
 
 #projects .fullscreen .image-2 {
-  background-image: url("../images/code1.jpg") !important;
+  background-image: url("./images/code1.jpg") !important;
   background-size: contain !important;
   background-position: center !important;
 }
 #projects .fullscreen .image-3 {
-  background-image: url("../images/code2.jpg") !important;
+  background-image: url("./images/code2.jpg") !important;
   background-size: contain !important;
   background-position: center !important;
 }
