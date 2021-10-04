@@ -23,12 +23,15 @@
   padding: 10vh 0 0 0;
 }
 
+:root {
+  overflow-x: hidden;
+}
 
 html {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 body {
 height: 100%;
@@ -241,6 +244,7 @@ opacity: 38%;
 
 .contact {
   background: #2f2f2f;
+  width: 100%;
 }
 .contact .title {
   text-align: center;
@@ -537,8 +541,8 @@ padding: 50px;
 .about .skill-icons {
   color: #eee;
   font-size: 3rem;
-  margin-top: 7vh;
-  display: flex;
+  margin-top: 7vw;
+  display:flexbox;
   align-items: center;
   justify-content: center;
 }
@@ -631,12 +635,18 @@ padding: 50px;
 }
 @media only screen and (max-device-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  .nav-contact {
+    font-size: 1rem;
+    font-family: 'STIX Two Text', serif;	
+     color: #2f2f2f;
+  }
   .fs-intro .greeting-title {
     font-size: 14rem;
   }
   .fs-intro .greeting-text {
-    padding-top: 5px;
-        font-size: 1rem;
+    padding-top: -2px;
+    font-size: 1rem;
   }
   .fs-intro .greeting {
     margin-top:0;
@@ -687,16 +697,23 @@ padding: 50px;
   margin-bottom: 40vh;
 }
 .about .title {
-  padding-bottom: 8vh;
+  padding-bottom: 6vh;
   font-size: 5rem;
 }
-
 .about .text {
   font-size: 0.8em;
   padding-top: 20px;
 }
 .about .about-text {
-  font-size: 1em;
+  font-size: 0.8rem;
+}
+.about .skill-icons {
+  color: #eee;
+  font-size: 1.2rem;
+  margin-top: 5vw;
+}
+.about .skill-icons * {
+  color: #eee;
 }
 .fas {
   font-size: 10;
@@ -748,7 +765,7 @@ textarea::placeholder {
   margin: 0;
   font-size: 1.2rem;
   width: 100%;
-  top: 15vh;
+  top: 17vh;
   left: 0%;
 }
 .expanded-detail {
@@ -774,7 +791,7 @@ textarea::placeholder {
   }
   .expanded-detail {
     font-size: 0.7rem;
-    top: 85vh;
+    top: 87vh;
   }
 }
 @media only screen and (max-device-width: 280px) {
