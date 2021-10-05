@@ -92,20 +92,20 @@ opacity: 38%;
   height: 110vh; 
 }
 #projects .fullscreen .image-1 {
-  background-image: url("./images/rr.png") !important;
-  background-size: contain !important;
-  background-position: center !important;
+  background-image: url("./images/rr.png");
+  background-size: cover;
+  background-position: top;
 }
 
 #projects .fullscreen .image-2 {
-  background-image: url("./images/code1.jpg") !important;
-  background-size: contain !important;
-  background-position: center !important;
+  background-image: url("./images/code1.jpg");
+  background-size: contain;
+  background-position: top;
 }
 #projects .fullscreen .image-3 {
-  background-image: url("./images/code2.jpg") !important;
-  background-size: contain !important;
-  background-position: center !important;
+  background-image: url("./images/code2.jpg");
+  background-size: contain;
+  background-position: top;
 }
 
 #projects .fullscreen-img {
@@ -533,7 +533,7 @@ padding: 50px;
   width: fit-content;
   height: fit-content;
   font-size: 1.4em;
-  padding-top: 40px;
+  padding: 40px 50px 0 0;
   color: #eee;
 }
 .about .skill-icons {
