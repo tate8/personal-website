@@ -34,10 +34,10 @@ html {
   overflow-x: hidden !important;
 }
 body {
-height: 100%;
-width: 100%;
-background-color: #eeeeee;
-
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background-color: #eeeeee;
 }
 *, ::after, ::before {
   box-sizing: unset;
