@@ -166,6 +166,9 @@ $(document).ready(function() {
 
   // on project image click
   $(".container").on("click", function() {
+    // $('.fullscreen').toggleClass('fullscreen') // only one expanded project at once
+
+
     $(this).toggleClass('fullscreen');
     $(".image-container").toggleClass('fullscreen-img');
     $(this).find(".text").toggleClass("hide");
