@@ -91,6 +91,7 @@ opacity: 38%;
   width: 100%; 
   height: 110vh; 
 }
+
 #projects .fullscreen .image-1 {
   background-image: url("./images/rr.png");
   background-size: cover;
@@ -172,7 +173,6 @@ opacity: 38%;
 }
 .expanded-detail {
   font-family: 'STIX Two Text', serif;
-  text-align: left;
   color: #eee;
   opacity: 60%;
   font-size: 1.5rem;
@@ -181,6 +181,7 @@ opacity: 38%;
   max-width: 20vw;
   left: 3vw;
   top: 30vh;
+  text-align: left !important;
 }
 .project-github-button {
   position: absolute;
@@ -478,7 +479,7 @@ pointer-events: none;
 }
 .fs-intro .greeting-title {
   font-family: 'Anton', sans-serif;
-
+  font-size: 28rem;
 }
 .fs-intro .greeting-text {
   font-family: 'STIX Two Text', serif;
@@ -602,7 +603,35 @@ padding: 50px;
 
 
 
-
+@media only screen and (max-width: 1250px) {
+  /* styles for browsers smaller than 1250 */
+  .expanded-text {
+    margin: 0;
+    width: 100%;
+    top: 17vh;
+    left: 0%;
+  }
+  .expanded-detail {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 80vw;
+    margin: 0;
+    top: 88vh;
+    width: 80vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
+  .expanded-detail-image {
+    display: none;
+  }
+  .project-github-button {
+    right: 5vw;
+    top: 5vw;
+    font-size: 2rem;
+    z-index: 8;
+  }
+}
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
   .fs-intro .greeting-title {
@@ -633,8 +662,6 @@ padding: 50px;
 }
 @media only screen and (max-device-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
-
-
   .nav-contact {
     font-size: 1rem;
     font-family: 'STIX Two Text', serif;	
@@ -776,6 +803,10 @@ textarea::placeholder {
   max-width: 80vw;
   margin: auto;
   top: 88vh;
+  width: 90vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
 }
 .expanded-detail-image {
   display: none;
@@ -815,7 +846,6 @@ textarea::placeholder {
 @media only screen and (device-width: 1024px) { 
   /* default iPad screens */
   .fs-intro .greeting-title {
-    font-size: 16rem;
   }
   .fs-intro .greeting-text {
         font-size: 2rem;
