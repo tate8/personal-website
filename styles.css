@@ -516,11 +516,6 @@ padding: 50px;
   padding: 50px 2vw 2vh 2vw;
 }
 
-.about {
-  /* position: absolute; */
-}
-
-
 .about .title {
   text-align: center;
 
@@ -623,6 +618,10 @@ padding: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
+  }
+  .inline-skill {
+    color: red !important;
+    background: blue !important;
   }
   .expanded-detail-image {
     display: none;
