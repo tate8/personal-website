@@ -185,6 +185,10 @@ opacity: 38%;
   top: 30vh;
   text-align: left !important;
 }
+.inline-skill {
+  /* font-weight: bold; */
+  color: #FD5F00;
+}
 .project-github-button {
   position: absolute;
   right: 20vw;
@@ -618,10 +622,6 @@ padding: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
-  }
-  .inline-skill {
-    color: red !important;
-    background: blue !important;
   }
   .expanded-detail-image {
     display: none;
