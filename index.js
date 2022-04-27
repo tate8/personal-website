@@ -23,6 +23,11 @@ $(document).ready(function() {
 
   // on project image click
   $(".container").on("click", function() {
+    // make view go to element
+    let distToTop = window.pageYOffset + this.getBoundingClientRect().top;
+    window.scrollTo(0, distToTop);
+
+
     $(this).toggleClass('fullscreen');
     $(".image-container").toggleClass('fullscreen-img');
     $(this).children(".image-container").toggleClass('top-30'); // move project img down on fullscreen
@@ -57,6 +62,7 @@ const raf = () => {
 requestAnimationFrame(raf);
 window.addEventListener("scroll", scrollProgress);
 
-
-  
 });
+
+
+
