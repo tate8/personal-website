@@ -14,6 +14,10 @@ h1, p {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 input, textarea {
     font-family: 'Times New Roman', serif;
 }
@@ -45,8 +49,19 @@ input, textarea {
     grid-template-columns: 1fr 1fr;
 }
 
+.grid-item .text {
+    padding-top: 0.5rem;
+}
+
 .grid-item .title {
     font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.fa-external-link {
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 .grid-item .image {
