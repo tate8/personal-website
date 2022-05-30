@@ -1,0 +1,189 @@
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Times New Roman', serif;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea {
+    font-family: 'Times New Roman', serif;
+}
+
+.medium-emphasis {
+    opacity: 75%;
+}
+
+.intro {
+    background: #FFFFFF;
+    padding: 15rem 15rem 15rem 15rem;
+}
+
+.title {
+    color: #141414;
+    font-size: 5rem;
+}
+
+.about {
+    padding-top: 5rem;
+}
+
+.projects {
+    background: #E5E5E5;
+    padding: 5rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 10rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item .title {
+    font-size: 1.5rem;
+}
+
+.grid-item .image {
+    aspect-ratio: 16 / 9;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.image-1 {
+    background-image: url("./img/AICardsLanding.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.image-2 {
+    background-image: url("./img/reddit.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.image-3 {
+
+}
+
+.contact {
+    padding: 10rem 0 8rem 0;
+    background: #FFFFFF;
+}
+
+.contact-me {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.input-name {
+    width: calc(100% - 20rem);
+    margin: 10rem 10rem 1rem 10rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.input-email {
+    width: calc(100% - 20rem);
+    margin: 1rem 10rem 1rem 10rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.input-message {
+    width: calc(100% - 20rem);
+    margin: 1rem 10rem 1rem 10rem;
+}
+
+.submit {
+    width: 10rem;
+    margin: 1rem 10rem 0 10rem;
+}
+
+/* mobile: */
+@media only screen and (max-device-width: 600px) {
+    .intro {
+        padding: 10rem 5rem 10rem 5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .about {
+        font-size: 0.8rem;
+        padding-top: 5rem;
+    }
+
+    .projects {
+        padding: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr  1fr 1fr 1fr 1fr 1fr;
+        row-gap: 1rem;
+    }
+    
+    .grid-item .title {
+        font-size: 1rem;
+    }
+
+    .grid-item .text {
+        font-size: 0.8rem;
+    }
+
+    .item-1 {
+        grid-row: 1 / 2;
+    }
+    .item-2 {
+        grid-row: 2 / 4;
+    }
+    .item-3 {
+        grid-row: 4 / 5;
+    }
+    .item-4 {
+        grid-row: 5 / 7;
+    }
+    .item-5 {
+        grid-row: 7 / 8;
+    }
+    .item-6 {
+        grid-row: 8 / 9;
+    }
+
+    .contact {
+        padding: 10rem 0 10rem 0;
+        background: #FFFFFF;
+    }
+    
+    .contact-me {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+    
+    .input-name {
+        width: calc(100% - 10rem);
+        margin: 5rem 5rem 1rem 5rem;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    
+    .input-email {
+        width: calc(100% - 10rem);
+        margin: 1rem 5rem 1rem 5rem;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    
+    .input-message {
+        width: calc(100% - 10rem);
+        margin: 1rem 5rem 1rem 5rem;
+    }
+    
+    .submit {
+        width: 10rem;
+        margin: 1rem 5rem 0 5rem;
+    }
+}
