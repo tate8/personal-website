@@ -4,208 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=description content="Tate Larkin's personal website">
-    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Georama&family=Montserrat&family=STIX+Two+Text&family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/c1d52da0c4.js" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
-
+    <link rel="stylesheet" href="styles.css">
     <title>Tate Larkin</title>
 </head>
 <body>
-        <div data-scroll>
-            <div data-scroll-content>
+    <div class="intro">
+        <h1 class="title">Tate</h1>
+        <h1 class="title">Larkin.</h1>
 
-<!-- NAVBAR -->
-                <nav class="shadow-none navbar fixed-top">
-                    <a class="ml-auto nav-contact" href="#contact">
-                        Contact
-                    </a>
-                </nav>
-<!-- INTRO -->
-                <section class="intro-parent">
-                    <div id="intro-child" class="fs-intro intro" >
-                        <div class="greeting">
-                            <h2 class="high-emphasis greeting-text">Hi, I'm </h2>
-                        </div>
-                        <div class="name">
-                            <h1 class="high-emphasis greeting-title">Tate</h1>
-                        </div>
-                    </div>
-                </section>
-<!-- ABOUT -->
-                <section class="about-parent">
-                    <div id="about-child" class="about">
-                        <h1 class="high-emphasis title slight-movement">About</h1>
-                        <p class="medium-emphasis about-text slight-movement">
-                            Hello, my name is Tate Larkin and i'm a software developer. I love biking, skiing and coding.    Whenever i'm not biking or skiing,
-                            i'm probably coding. I love learning about the small details about large things like computers
-                            and applications. I love to design applications with structure, complexity, and that have
-                            a real impact on the world.
-                        </p>
-                        <div class="skill-icons medium-emphasis">
-                            <i class="fab fa-python"></i>
-                            <i class="fas fa-database"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-js-square"></i>
-                            <i class="fab fa-react"></i>
-                            <i class="fab fa-node-js"></i>
-                            <i class="fab fa-java"></i>
-                            <i class="fas fa-terminal"></i>
-                            <i class="fab fa-git-alt"></i>
-    
-                            <i class="fas fa-ellipsis-h"></i>
-                        </div>
-                    </div>
-                </section>
-<!-- PROJECTS -->
-            <section id="projects">
-                <h1 class="section-title slight-movement">Projects</h1>
+        <p class="about">
+            High school student and self taught programmer with a passion for 
+            Machine Learning, Full Stack Web Development and Graphics Programming.  
+            Driven to succeed, learn new skills and contribute to organizational success.  
+            Highly decorated mountain bike racer and overall outdoor enthusiast.
+        </p>
+    </div>
 
-                <div class="content">
-                    <div class="container">
-                        <div class="image-container image-2">
-                            <!-- not expanded -->
-                            <h2 class="text">
-                                <span class="parallax-title">
-                                    AI FLASHCARDS
-                                </span>
-                            </h2>
-                        </div>
 
-                        <h2 class="text text-dark">
-                            <span class="parallax-title">
-                                AI FLASHCARDS
-                            </span>
-                        </h2>
-                        <!-- expanded -->
-                        <h2 class="expanded-text hide">AI Flashcards</h2>
-                        <p class="expanded-detail hide">
-                            My first project using <span class="inline-skill">machine learning</span>. AI Flashcards is an educational 
-                            website for young kids studying basic vocabulary. Simply draw a picture of 
-                            the word on the front on the flashcard, and ROBOT will let you know if you drew the right picture!
-                        </p>
-                        <a class="project-github-button hide" href="https://github.com/tate8/AI-flashcards.git">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <div class="expanded-detail-image hide"></div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="container">
-                        <div class="image-container image-1">
-                            <!-- not expanded -->
-                            <h2 class="text">
-                                <span class="parallax-title">
-                                    A Reddit Clone
-                                </span>
-                            </h2>
-                        </div>
+    <div class="projects">
+        <div class="grid-item item-2">
+            <h3 class="title">
+                AI Flashcards
+            </h3>
+            <p class="text medium-emphasis">
+                AI Flashcards is an educational website for young kids studying basic vocabulary. It uses computer vision with 
+                a Convolutional Neural Network (CNN) to detect drawn items. Simply draw a picture 
+                 of the word on the front on a flashcard, and find out if you drew it right!
+            </p>
+        </div>
 
-                        <h2 class="text text-dark">
-                            <span class="parallax-title">
-                                A Reddit Clone
-                            </span>
-                        </h2>
-                        <!-- expanded -->
-                        <h2 class="expanded-text hide">Re-Reddit</h2>
-                        <p class="expanded-detail hide">
-                            As my first full-stack web development project, this website was a big step in my 
-                            journey as a developer. Learning about <span class="inline-skill">database managment</span>, 
-                            <span class="inline-skill">APIs</span>, and frameworks
-                            like <span class="inline-skill">React</span>, 
-                            <span class="inline-skill">Redux</span>, 
-                            <span class="inline-skill">Express</span>, and more brought my skills to the next level. In this
-                            website, you can login and view posts from the Reddit JSON API. Check it out <a href="https://a-reddit-clone.herokuapp.com/">here</a>
-                        </p>
-                        <a class="project-github-button hide" href="https://github.com/tate8/reddit-clone.git">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="container">
-                        <div class="image-container image-3">
-                            <!-- not expanded -->
-                            <h2 class="text">
-                                <span class="parallax-title">
-                                    we live in the details
-                                </span>
-                            </h2>
-                        </div>
+        <div class="grid-item item-1">
+            <div class="image image-1"></div>
+        </div>
 
-                        <h2 class="text text-dark">
-                            <span class="parallax-title">
-                                we live in the details
-                            </span>
-                        </h2>
-                        <!-- expanded -->
-                        <h2 class="expanded-text hide">Sample Project Title</h2>
-                        <p class="expanded-detail hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                        <div class="expanded-detail-image hide"></div>
-                    </div>
-                </div>
-            </section>
 
-<!-- CONTACT -->
-                <div id="contact" class="contact">
-                    <h1 class="title slight-movement">Get in touch</h1>
-    
-                    <form method="post" name="contact-form" action="https://formspree.io/f/mpzknlve" id="contact-form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Full name"></input>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" name="email" id="email" placeholder="Email"></input>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 submit-container">
-                                <input type="submit" value="Send" class="submit submit-contact-form"></input>
-                            </div>
-                        </div>
-                    </form>
-                    <div class='flat-under'>
-                        <div class='grow-container'>
-                            <a href="https://github.com/tate8" class='to-github circle-button'>
-                                <i class="fab fa-github fa-fw" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class='grow-container'>
-                            <a href="https://linkedin.com/in/tate-larkin-8059b520a" class='to-linkedin circle-button'>
-                                <i class="fab fa-linkedin fa-fw" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div> 
-                </div>
-            </div>
+        <div class="grid-item item-3">
+            <div class="image image-2"></div>
+        </div>
+
+        <div class="grid-item item-4">
+            <h3 class="title">
+                Reddit Clone
+            </h3>
+            <p class="text medium-emphasis">
+                A full stack website using the MERN stack and other technologies such as Redux, Passport.js, 
+                JQuery, Dotenv, and Gravitar. In this website, you can login by creating an account, or
+                 singing in with Google or Facebook, and view posts from the Reddit JSON API.
+            </p>
+        </div>
+            
+        
+        <div class="grid-item item-6">
+            <h3 class="title">
+                Lorem Ipsum
+            </h3>
+            <p class="text medium-emphasis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. 
+            </p>
+        </div>
+
+        <div class="grid-item item-5">
+            <div class="image image-3"></div>
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="contact">
+        <h1 class="contact-me">Contact Me</h1>
 
-    <script src="index.js"></script>
+        <form method="post" name="contact-form" action="https://formspree.io/f/mpzknlve" id="contact-form">
+            <input type="text" class="input-name" name="name" id="name" placeholder="Full name"></input>
+            <input type="text" class="input-email" name="email" id="email" placeholder="Email"></input>
+            <textarea class="input-message" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+            <input type="submit" value="Send" class="submit"></input>
+        </form>
+    </div>
 </body>
 </html>
