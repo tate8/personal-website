@@ -59,11 +59,6 @@ input, textarea {
     text-decoration: none;
 }
 
-.fa-external-link {
-    font-size: 1.2rem;
-    font-weight: bolder;
-}
-
 .grid-item .image {
     aspect-ratio: 16 / 9;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -82,7 +77,9 @@ input, textarea {
 }
 
 .image-3 {
-
+    background-image: url("./img/translator.png");
+    background-size: cover;
+    background-position: top;
 }
 
 .contact {
@@ -117,6 +114,10 @@ input, textarea {
 .submit {
     width: 10rem;
     margin: 1rem 10rem 0 10rem;
+}
+
+.learn-more {
+    font-size: .9rem;
 }
 
 /* mobile: */
