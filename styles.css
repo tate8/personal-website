@@ -118,6 +118,11 @@ input, textarea {
 
 .learn-more {
     font-size: .9rem;
+    color: blue;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
 }
 
 /* mobile: */
