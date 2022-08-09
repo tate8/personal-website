@@ -40,13 +40,23 @@ input, textarea {
     padding-top: 5rem;
 }
 
-.projects {
+#projects {
     background: #E5E5E5;
+}
+
+.projects {
     padding: 5rem;
     display: grid;
     column-gap: 5rem;
     row-gap: 10rem;
     grid-template-columns: 1fr 1fr;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    text-decoration: underline;
 }
 
 .grid-item .text {
@@ -142,10 +152,14 @@ input, textarea {
 
     .projects {
         padding: 3rem;
+        padding-top: 2rem;
         grid-template-columns: 1fr;
-        /* grid-template-rows: 1fr  1fr 1fr 1fr 1fr 1fr; */
         grid-template-rows: 1fr 1fr 0fr 1fr 1fr;
         row-gap: 1rem;
+    }
+
+    .projects-title {
+        font-size: 2rem;
     }
     
     .grid-item .title {
@@ -208,5 +222,9 @@ input, textarea {
     .submit {
         width: 10rem;
         margin: 1rem 5rem 0 5rem;
+    }
+
+    .image {
+        margin-top: 2rem;
     }
 }
