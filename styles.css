@@ -26,6 +26,10 @@ input, textarea {
     opacity: 75%;
 }
 
+.intro-container {
+    min-height: 100vh;
+}
+
 .intro {
     background: #FFFFFF;
     padding: 15rem 15rem 15rem 15rem;
@@ -59,6 +63,22 @@ input, textarea {
     text-decoration: underline;
 }
 
+.project-tags {
+    display: flex;
+    margin-bottom: .5rem;
+    flex-wrap: wrap;
+}
+
+.project-tag {
+    padding: 5px 10px;
+    border-radius: .5rem;
+    color: white;
+    background-color: #999999;
+    width: max-content;
+    margin: 3px;
+    font-size: .9rem;
+}
+
 .grid-item .text {
     padding-top: 0.5rem;
 }
@@ -67,29 +87,12 @@ input, textarea {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
+    margin-bottom: .5rem;
 }
 
-.grid-item .image {
-    aspect-ratio: 16 / 9;
+.grid-item .video {
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
-.image-1 {
-    background-image: url("./img/AICardsLanding.png");
-    background-size: cover;
-    background-position: top;
-}
-
-.image-2 {
-    background-image: url("./img/reddit.png");
-    background-size: cover;
-    background-position: top;
-}
-
-.image-3 {
-    background-image: url("./img/translator.png");
-    background-size: cover;
-    background-position: top;
 }
 
 .contact {
@@ -124,6 +127,15 @@ input, textarea {
 .submit {
     width: 10rem;
     margin: 1rem 10rem 0 10rem;
+    border-radius: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.submit:hover {
+    background-color: #E5E5E5;
+    cursor: pointer;
 }
 
 .learn-more {
@@ -163,12 +175,12 @@ input, textarea {
     }
     
     .grid-item .title {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-top: 0;
     }
 
     .grid-item .text {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
     .item-1 {
@@ -224,7 +236,15 @@ input, textarea {
         margin: 1rem 5rem 0 5rem;
     }
 
-    .image {
+    video {
         margin-top: 2rem;
+    }
+
+    .project-tag {
+        font-size: .7rem;
+    }
+
+    .learn-more {
+        font-size: .8rem;
     }
 }
