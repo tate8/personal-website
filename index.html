@@ -18,137 +18,179 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JavaScript -->
+    <script defer src="./index.js"></script>
 </head>
 <body>
-    <div class="intro-container">
-        <div class="intro">
-            <h1 class="title">Tate</h1>
-            <h1 class="title">Larkin.</h1>
-
-            <p class="about">
-                High school student and self taught programmer with a passion for 
-                Machine Learning, Full Stack Web Development and Graphics Programming.  
-                Driven to succeed, learn new skills and contribute to organizational success.  
-                Highly decorated mountain bike racer and overall outdoor enthusiast.
-            </p>
+    <div class="site-container">
+        <div id="navbar" class="navbar">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
 
-    <section id="projects">
-        <h1 class="projects-title">Projects</h1>
+        
+        <div class="intro-container">
+            <div class="intro">
 
-        <div class="projects">
-            <div class="grid-item item-2">
-                <h3  class="title">
-                    AI Flashcards
-                </h3>
-                <div class="project-tags">
-                    <div class="project-tag">Python</div>
-                    <div class="project-tag">Flask</div>
-                    <div class="project-tag">Jinja</div>
-                    <div class="project-tag">Tensorflow</div>
-                    <div class="project-tag">Keras</div>
-                    <div class="project-tag">Numpy</div>
-                    <div class="project-tag">OpenCV</div>
-                    <div class="project-tag">Matplotlib</div>
-                </div>
-                <p class="text medium-emphasis">
-                    AI Flashcards is an educational website for young kids studying basic vocabulary. It uses computer vision with 
-                    a Convolutional Neural Network to detect drawn items. Simply draw a picture 
-                     of the word on the front on a flashcard, and find out if you drew it right!
-    
-                    <br>
-                    <br>
-                    <a class="learn-more" href="https://github.com/tate8/AI-flashcards">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
-                </p>
-            </div>
-    
-            <div class="grid-item item-1">
-                <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4#t=0.5" controls="controls" muted="muted" class="video">
-
-                </video>
-            </div>
-    
-    
-            <div class="grid-item item-3">
-                <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/183781571-ce8c47bb-7dca-4db1-bc78-bd426efe27a8.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/183781571-ce8c47bb-7dca-4db1-bc78-bd426efe27a8.mov#t=0.5" controls="controls" muted="muted" class="video">
-
-                </video>
-            </div>
-    
-            <div class="grid-item item-4">
-                <h3 class="title">
-                    Reddit Clone
-                </h3>
-                <div class="project-tags">
-                    <div class="project-tag">MongoDB</div>
-                    <div class="project-tag">Express.js</div>
-                    <div class="project-tag">React.js</div>
-                    <div class="project-tag">Node.js</div>
-                    <div class="project-tag">Redux</div>
-                    <div class="project-tag">Passport.js</div>
-                    <div class="project-tag">JQuery</div>
-                    <div class="project-tag">Dotenv</div>
-                    <div class="project-tag">Gravatar</div>
-                    <div class="project-tag">OAuth 2.0</div>
-                </div>
-                <p class="text medium-emphasis">
-                    A full stack website using the MERN stack and other technologies.
-                     In this website, you can login by creating an account, or
-                     by signing in with Google, and view posts from the Reddit JSON API.
-    
-                    <br>
-                    <br>
-                    <a class="learn-more" href="https://github.com/tate8/reddit-clone">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
-                </p>
-            </div>
+                <h1 class="intro-title">Tate</h1>
+                <h1 class="intro-title">Larkin<i class="fa-solid fa-circle period"></i></h1>
                 
-            
-            <div class="grid-item item-6">
-                <h3 class="title">
-                    Translator
-                </h3>
-                <div class="project-tags">
-                    <div class="project-tag">Python</div>
-                    <div class="project-tag">Rust</div>
-                    <div class="project-tag">TCP</div>
-                    <div class="project-tag">Tensorflow</div>
-                    <div class="project-tag">Keras</div>
-                    <div class="project-tag">Numpy</div>
-                    <div class="project-tag">Regex</div>
-                    <div class="project-tag">Transformer</div>
-                </div>
-                <p class="text medium-emphasis">
-                    The Translator website uses a Transformer model to perform 
-                    Neural Machine Translation to translate from English to Spanish. 
-                    The website runs on a multi-threaded web server coded in Rust.
-    
-                    <br>
-                    <br>
-                    <a class="learn-more" href="https://github.com/tate8/translator">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
+
+                <p class="about">
+                    High school student and self taught programmer with a passion for 
+                    Data Science, Machine Learning, and Full Stack Web Development.  
+                    Driven to succeed, learn new skills and contribute to organizational success.  
+                    Highly decorated mountain bike racer and overall outdoor enthusiast.
                 </p>
-    
-    
             </div>
-    
-            <div class="grid-item item-5">  
-                <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov#t=0.5" controls="controls" muted="muted" class="video">
+        </div>               
 
-                </video>
+
+        <section id="projects">
+            <div class="header-wrapper">
+                <div class="header-box">
+                    <h1 class="projects-title">Projects</h1>
+                </div>
             </div>
-        </div>
-    </section>
-    
 
-    <div class="contact">
-        <h1 class="contact-me">Contact Me</h1>
+            <div class="projects">
+                <div class="grid-item item-2">
+                    <h3  class="title">
+                        AI Flashcards
+                    </h3>
+                    <div class="project-tags">
+                        <div class="project-tag">Python</div>
+                        <div class="project-tag">Flask</div>
+                        <div class="project-tag">Jinja</div>
+                        <div class="project-tag">Tensorflow</div>
+                        <div class="project-tag">Keras</div>
+                        <div class="project-tag">Numpy</div>
+                        <div class="project-tag">OpenCV</div>
+                        <div class="project-tag">Matplotlib</div>
+                    </div>
+                    <p class="text medium-emphasis">
+                        AI Flashcards is an educational website for young kids studying basic vocabulary. It uses computer vision with 
+                        a Convolutional Neural Network to detect drawn items. Simply draw a picture 
+                        of the word on the front on a flashcard, and find out if you drew it right!
+        
+                        <br>
+                        <br>
+                        <a class="learn-more" href="https://github.com/tate8/AI-flashcards">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </p>
+                </div>
+        
+                <div class="grid-item item-1 grid-video">
+                    <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4#t=0.5" controls="controls" muted="muted" class="video">
 
-        <form method="post" name="contact-form" action="https://formspree.io/f/mpzknlve" id="contact-form" onsubmit="this.reset();">
-            <input type="text" class="input-name" name="name" id="name" placeholder="Full name"></input>
-            <input type="text" class="input-email" name="email" id="email" placeholder="Email"></input>
-            <textarea class="input-message" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
-            <input type="submit" value="Send" class="submit"></input>
-        </form>
+                    </video>
+                </div>
+        
+        
+                <div class="grid-item item-3 grid-video">
+                    <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/183781571-ce8c47bb-7dca-4db1-bc78-bd426efe27a8.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/183781571-ce8c47bb-7dca-4db1-bc78-bd426efe27a8.mov#t=0.5" controls="controls" muted="muted" class="video">
+
+                    </video>
+                </div>
+        
+                <div class="grid-item item-4">
+                    <h3 class="title">
+                        Reddit Clone
+                    </h3>
+                    <div class="project-tags">
+                        <div class="project-tag">MongoDB</div>
+                        <div class="project-tag">Express.js</div>
+                        <div class="project-tag">React.js</div>
+                        <div class="project-tag">Node.js</div>
+                        <div class="project-tag">Redux</div>
+                        <div class="project-tag">Passport.js</div>
+                        <div class="project-tag">JQuery</div>
+                        <div class="project-tag">Dotenv</div>
+                        <div class="project-tag">Gravatar</div>
+                        <div class="project-tag">OAuth 2.0</div>
+                    </div>
+                    <p class="text medium-emphasis">
+                        A full stack website using the MERN stack and other technologies.
+                        In this website, you can login by creating an account, or
+                        by signing in with Google, and view posts from the Reddit JSON API.
+        
+                        <br>
+                        <br>
+                        <a class="learn-more" href="https://github.com/tate8/reddit-clone">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </p>
+                </div>
+                    
+                
+                <div class="grid-item item-6">
+                    <h3 class="title">
+                        Translator
+                    </h3>
+                    <div class="project-tags">
+                        <div class="project-tag">Python</div>
+                        <div class="project-tag">Rust</div>
+                        <div class="project-tag">TCP</div>
+                        <div class="project-tag">Tensorflow</div>
+                        <div class="project-tag">Keras</div>
+                        <div class="project-tag">Numpy</div>
+                        <div class="project-tag">Regex</div>
+                        <div class="project-tag">Transformer</div>
+                    </div>
+                    <p class="text medium-emphasis">
+                        The Translator website uses a Transformer model to perform 
+                        Neural Machine Translation to translate from English to Spanish. 
+                        The website runs on a multi-threaded web server coded in Rust.
+        
+                        <br>
+                        <br>
+                        <a class="learn-more" href="https://github.com/tate8/translator">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </p>
+        
+        
+                </div>
+        
+                <div class="grid-item item-5 grid-video">  
+                    <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov#t=0.5" controls="controls" muted="muted" class="video">
+
+                    </video>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact">
+            <div class="contact">
+                <div class="header-wrapper">
+                    <div class="header-box">
+                        <h1 class="contact-me">Contact Me</h1>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form method="post" name="contact-form" action="https://formspree.io/f/mpzknlve" id="contact-form" onsubmit="this.reset();">
+                        <input type="text" class="input-name" name="name" id="name" placeholder="Full Name"></input>
+                        <input type="text" class="input-email" name="email" id="email" placeholder="Email"></input>
+                        <textarea class="input-message" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+                        <input type="submit" value="Send" class="submit"></input>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tate-larkin-8059b520a/"><div class="social-icon-container"><i class="fa-brands fa-linkedin-in social-icon"></i></div></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/tate8"><div class="social-icon-container"><i class="fa-brands fa-github social-icon"></i></div></a>
+            </div>
+        </section>
+
     </div>
 </body>
 </html>

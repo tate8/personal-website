@@ -1,3 +1,18 @@
+:root {
+    --text-color: white;
+    --primary-background: rgb(33, 33, 33);
+    --link-color: #0f0;
+    --accent-color: #0f0;
+    --title-font: 'Roboto', sans-serif;
+    --default-font: 'Poppins', sans-serif;
+    --skew: 5deg
+}
+
+* {
+    color: var(--text-color);
+    font-family: var(--default-font);
+    scroll-behavior: smooth;
+}
 
 html {
     width: 100%;
@@ -6,7 +21,68 @@ html {
 body {
     margin: 0;
     width: 100%;
-    font-family: 'Times New Roman', serif;
+    font-family: var(--title-font);
+    background-color: var(--primary-background);
+}
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    background-color: var(--primary-background);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-scrolled {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    display: inline-block;
+    width: max-content;
+    text-decoration: none;
+    margin: auto .5rem;
+    border-radius: 10px;
+    padding: 3px 10px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.nav-item a {
+    color: var(--text-color);
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-item::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: var(--accent-color);
+    transition: 300ms;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.site-container {
+    max-width: 1600px;
+    margin: auto;
 }
 
 h1, p {
@@ -31,21 +107,59 @@ input, textarea {
 }
 
 .intro {
-    background: #FFFFFF;
-    padding: 15rem 15rem 15rem 15rem;
+    background: var(--primary-background);
+    padding: 7.5rem 15rem 15rem 15rem;
 }
 
-.title {
-    color: #141414;
+.intro-title {
     font-size: 5rem;
+    color: var(--text-color);
+}
+
+.period {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-left: 2px;
 }
 
 .about {
     padding-top: 5rem;
 }
 
+
 #projects {
-    background: #E5E5E5;
+    background-color: var(--secondary-background);
+}
+
+.projects-intro {
+    width: fit-content;
+    margin: auto;
+}
+
+.header-wrapper {
+    background-color: var(--accent-color);
+    padding: 3%;
+    margin-bottom: 2rem;
+    -webkit-transform: skewY(var(--skew));
+    -moz-transform: skewY(var(--skew));
+    -ms-transform: skewY(var(--skew));
+    -o-transform: skewY(var(--skew));
+    transform: skewY(var(--skew));
+}
+
+.header-box {
+    -webkit-transform: skewY(calc(var(--skew) * -1));
+    -moz-transform: skewY(calc(var(--skew) * -1));
+    -ms-transform: skewY(calc(var(--skew) * -1));
+    -o-transform: skewY(calc(var(--skew) * -1));
+    transform: skewY(calc(var(--skew) * -1));
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-color);
+    color: black;
 }
 
 .projects {
@@ -56,13 +170,6 @@ input, textarea {
     grid-template-columns: 1fr 1fr;
 }
 
-.projects-title {
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 1.5rem;
-    text-decoration: underline;
-}
-
 .project-tags {
     display: flex;
     margin-bottom: .5rem;
@@ -71,9 +178,10 @@ input, textarea {
 
 .project-tag {
     padding: 5px 10px;
-    border-radius: .5rem;
-    color: white;
-    background-color: #999999;
+    border-radius: 0;
+    color: var(--accent-color);
+    background-color: var(--primary-background);
+    border: 1px solid var(--accent-color);
     width: max-content;
     margin: 3px;
     font-size: .9rem;
@@ -84,10 +192,12 @@ input, textarea {
 }
 
 .grid-item .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
     margin-bottom: .5rem;
+    margin-top: 0;
+    color: var(--text-color);
 }
 
 .grid-item .video {
@@ -96,65 +206,116 @@ input, textarea {
 }
 
 .contact {
-    padding: 10rem 0 8rem 0;
-    background: #FFFFFF;
+    padding: 10rem 0 5rem 0;
+    background: var(--primary-background);
 }
 
 .contact-me {
     text-align: center;
     font-size: 3rem;
+    color: black
+}
+
+.contact-form {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+::placeholder {
+    font-family: var(--default-font);
+    color: var(--text-color);
+    font-size: 1rem;
 }
 
 .input-name {
-    width: calc(100% - 20rem);
-    margin: 10rem 10rem 1rem 10rem;
     border: none;
-    border-bottom: 1px solid black;
+    background-color: var(--primary-background);
+    border-bottom: 2px solid var(--accent-color);
+    height: 2rem;
+    margin-right: 2rem;
 }
 
 .input-email {
-    width: calc(100% - 20rem);
-    margin: 1rem 10rem 1rem 10rem;
     border: none;
-    border-bottom: 1px solid black;
+    background-color: var(--primary-background);
+    border-bottom: 2px solid var(--accent-color);
+    height: 2rem;
 }
 
 .input-message {
-    width: calc(100% - 20rem);
-    margin: 1rem 10rem 1rem 10rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    background-color: var(--primary-background);
+    border-bottom: 2px solid var(--accent-color);
+    height: 10rem;
+}
+
+textarea {
+    resize: none;
 }
 
 .submit {
-    width: 10rem;
-    margin: 1rem 10rem 0 10rem;
+    font-size: 1.2rem;
+    padding: 5px 10px;
     border-radius: 0;
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+    color: var(--accent-color);
+    background-color: var(--primary-background);
+    border: 1px solid var(--accent-color);
 }
 
 .submit:hover {
-    background-color: #E5E5E5;
+    background-color: var(--accent-color);
+    color: black;
     cursor: pointer;
 }
 
 .learn-more {
     font-size: .9rem;
-    color: blue;
+    color: var(--link-color);
 }
 
 .learn-more:hover {
     text-decoration: underline;
 }
 
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.social-icon-container {
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--accent-color);
+    color: var(--primary-background);
+    margin: 10px;
+}
+
+.social-icon {
+    padding: 10px;
+    font-size: 1.25rem;
+    color: var(--primary-background);
+}
+
+.social-icon-container:hover {
+    opacity: 50%;
+}
+
+
 /* mobile: */
 @media only screen and (max-device-width: 600px) {
     .intro {
-        padding: 10rem 5rem 10rem 5rem;
+        padding: 5rem 4rem;
     }
 
-    .title {
-        font-size: 3rem;
+    .intro-title {
+        font-size: 4rem;
     }
 
     .about {
@@ -164,9 +325,9 @@ input, textarea {
 
     .projects {
         padding: 3rem;
-        padding-top: 2rem;
+        padding-top: 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 0fr 1fr 1fr;
+        grid-template-rows: auto;
         row-gap: 1rem;
     }
 
@@ -181,6 +342,12 @@ input, textarea {
 
     .grid-item .text {
         font-size: 0.85rem;
+    }
+
+    .grid-video {
+        align-self: end;
+        justify-self: center;
+        margin-top: 4rem;
     }
 
     .item-1 {
@@ -203,37 +370,21 @@ input, textarea {
     }
 
     .contact {
-        padding: 10rem 0 10rem 0;
-        background: #FFFFFF;
+        padding: 10rem 0 2rem 0;
     }
     
     .contact-me {
         text-align: center;
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
-    
-    .input-name {
-        width: calc(100% - 10rem);
-        margin: 5rem 5rem 1rem 5rem;
-        border: none;
-        border-bottom: 1px solid black;
+
+    .contact-form {
+        margin: 3rem;
+        margin-top: 5rem;
     }
     
     .input-email {
-        width: calc(100% - 10rem);
-        margin: 1rem 5rem 1rem 5rem;
-        border: none;
-        border-bottom: 1px solid black;
-    }
-    
-    .input-message {
-        width: calc(100% - 10rem);
-        margin: 1rem 5rem 1rem 5rem;
-    }
-    
-    .submit {
-        width: 10rem;
-        margin: 1rem 5rem 0 5rem;
+        margin-top: 1rem;
     }
 
     video {
