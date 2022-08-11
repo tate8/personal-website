@@ -338,7 +338,7 @@ textarea {
 .social-icon-container {
     border-radius: 100%;
     aspect-ratio: 1 / 1;
-    background-color: var(--accent-color);
+    background-image: linear-gradient(to left, var(--accent-color), var(--secondary-accent-color));
     color: var(--primary-background);
     margin: 10px;
 }
