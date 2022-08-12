@@ -150,6 +150,24 @@ a {
     color: transparent;
 }
 
+.download-resume {
+}
+
+.download-resume-arrow {
+    margin-left: 10px;
+    margin-right: 1.25rem;
+    transition: .2s linear;
+    color: var(--accent-color);
+    background: linear-gradient(to left, var(--accent-color), var(--secondary-accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.download-resume:hover {
+    text-decoration: underline;
+}
+
 .intro-to-contact-text:hover .intro-to-contact-arrow {
     transform: translateX(50%);
 }
