@@ -102,11 +102,14 @@ a {
 
 .intro-container {
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro {
     background: var(--primary-background);
-    padding: 7.5rem 15rem 15rem 15rem;
+    width: 70%;
 }
 
 .intro-title {
@@ -186,7 +189,7 @@ a {
     background-image: linear-gradient(to left, var(--accent-color), var(--secondary-accent-color));
     padding: 4%;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     -webkit-transform: skewY(var(--skew));
     -moz-transform: skewY(var(--skew));
     -ms-transform: skewY(var(--skew));
@@ -379,7 +382,8 @@ textarea {
     }
 
     .intro {
-        padding: 8rem 2rem;
+        /* padding: 8rem 2rem; */
+        width: 80%;
     }
 
     .intro-title {
@@ -397,6 +401,10 @@ textarea {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         row-gap: 1rem;
+    }
+
+    .header-wrapper {
+        padding: 8%;
     }
 
     .projects-title {
