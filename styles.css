@@ -168,8 +168,8 @@ a {
 
 .blob path {
     fill: url(#gradient);
-    animation: blob 30s ease-in-out infinite;
-    -webkit-animation: blob 30s ease-in-out infinite;
+    /* animation: blob 30s ease-in-out infinite;
+    -webkit-animation: blob 30s ease-in-out infinite; */
     mix-blend-mode: difference;
 }
 
