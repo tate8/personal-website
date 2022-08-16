@@ -256,11 +256,12 @@ a {
 }
 
 .project-tag {
-    padding: 2.5px 7px;
-    border-radius: 0;
-    color: var(--text-color);
-    background-color: var(--inverse-accent-color);
-    border-radius: .3rem;
+    padding: 0.3em 0.85em;
+    border-radius: 2em;
+    font-weight: 500;
+    color: gray;
+    text-transform: uppercase;
+    border: 3px solid var(--inverse-accent-color);
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
