@@ -152,8 +152,8 @@ a {
 .blob path {
     fill: url(#gradient);
     animation: blob 30s ease-in-out infinite;
+    -webkit-animation: blob 30s ease-in-out infinite;
     mix-blend-mode: difference;
-    transform: scale(1)
 }
 
 @keyframes blob {
@@ -448,7 +448,9 @@ textarea {
     }
     
     .blob path {
-        transform: scale(.8)
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
     }
 
     .about {
