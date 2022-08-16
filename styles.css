@@ -8,7 +8,7 @@
     --primary-background: white;
     --accent-color: #4a00e0;
     --secondary-accent-color: #8e2de2;
-    --inverse-accent-color: #34c006;
+    --inverse-accent-color: #3fe208;
     --title-font: 'Roboto', sans-serif;
     --default-font: 'Poppins', sans-serif;
     --gradient: linear-gradient(45deg, var(--accent-color), var(--secondary-accent-color));
@@ -256,16 +256,16 @@ a {
 }
 
 .project-tag {
-    padding: 5px 10px;
+    padding: 2.5px 7px;
     border-radius: 0;
-    color: darkgreen;
-    border: 2px solid var(--inverse-accent-color);
-    border-radius: .2rem;
+    color: var(--text-color);
+    background-color: var(--inverse-accent-color);
+    border-radius: .3rem;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     margin: 3px;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .grid-item .text {
