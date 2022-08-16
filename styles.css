@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
 :root {
     --text-color: black;
     --primary-background: white;
     --accent-color: #4a00e0;
     --secondary-accent-color: #8e2de2;
     --inverse-accent-color: #34c006;
-    --title-font: Roboto, sans-serif;
+    --title-font: 'Roboto', sans-serif;
     --default-font: 'Poppins', sans-serif;
     --gradient: linear-gradient(45deg, var(--accent-color), var(--secondary-accent-color));
     --skew: 5deg
@@ -27,14 +24,32 @@ body {
     margin: 0;
     width: 100%;
     background-color: var(--primary-background);
+    overflow: visible;
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-container {
+    max-width: 1600px;
+    margin: auto;
+    position: relative;
+    overflow-x: hidden;
 }
 
 /* Navbar */
 
 .navbar {
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
+    position: -webkit-fixed;
+    position: fixed;
     top: 0;
     left: 0;
     height: -webkit-fit-content;
@@ -92,23 +107,6 @@ body {
     width: 100%;
 }
 
-.site-container {
-    max-width: 1600px;
-    margin: auto;
-    position: relative;
-    overflow-x: hidden;
-}
-
-h1,
-p {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
 .medium-emphasis {
     opacity: 75%;
 }
@@ -119,6 +117,7 @@ a {
     align-items: center;
     justify-content: center;
     background: var(--primary-background);
+    margin-top: 4rem;
 }
 
 .intro {
@@ -145,7 +144,7 @@ a {
 }
 
 .about {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .blob {
