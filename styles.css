@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto/Roboto-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+    src: local('Roboto'), url('Roboto-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
 
 :root {
