@@ -258,14 +258,14 @@ a {
 .project-tag {
     padding: 5px 10px;
     border-radius: 0;
-    color: var(--inverse-accent-color);
+    color: darkgreen;
     border: 2px solid var(--inverse-accent-color);
     border-radius: .2rem;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     margin: 3px;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .grid-item .text {
