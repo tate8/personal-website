@@ -128,6 +128,7 @@ a {
 .intro {
     background: var(--primary-background);
     width: 70%;
+    position: relative;
 }
 
 .intro-title {
@@ -162,8 +163,7 @@ a {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    left: 30rem;
-    top: 20rem;
+    left: 15rem;
 }
 
 .blob path {
@@ -456,8 +456,7 @@ textarea {
     }
 
     .blob {
-        left: 12rem;
-        top: 16rem;
+        left: 10rem;
     }
 
     .blob path {
