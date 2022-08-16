@@ -4,7 +4,7 @@
     --accent-color: #4a00e0;
     --secondary-accent-color: #8e2de2;
     --inverse-accent-color: #34c006;
-    --title-font: 'Roboto', sans-serif;
+    --title-font: Roboto, sans-serif;
     --default-font: 'Poppins', sans-serif;
     --gradient: linear-gradient(45deg, var(--accent-color), var(--secondary-accent-color));
     --skew: 5deg
@@ -284,7 +284,7 @@ a {
     padding: 5rem;
     display: grid;
     -moz-column-gap: 5rem;
-         column-gap: 5rem;
+    column-gap: 5rem;
     row-gap: 10rem;
     grid-template-columns: 1fr 1fr;
 }
@@ -499,7 +499,7 @@ textarea {
         left: 12rem;
         top: 16rem;
     }
-    
+
     .blob path {
         transform: scale(.8);
         -ms-transform: scale(.8);
