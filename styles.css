@@ -435,7 +435,7 @@ textarea {
 
 @media only screen and (max-width: 1300px) {
     .projects {
-        padding: 10%;
+        padding: 20%;
         padding-top: 0;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -478,6 +478,7 @@ textarea {
         align-self: end;
         justify-self: center;
         margin-top: 7rem;
+        max-width: 60vw;
     }
 }
 
@@ -540,6 +541,7 @@ textarea {
         align-self: end;
         justify-self: center;
         margin-top: 4rem;
+        max-width: none;
     }
 
     .item-1 {
