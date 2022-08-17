@@ -21,7 +21,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -30,9 +30,10 @@
     <script defer src="./index.js"></script>
 </head>
 <body>
+    <div class="preload">
+        <div class="loadingspinner"></div>
+    </div>
     <div class="site-container">
-        
-
         <div id="navbar" class="navbar">
             <div class="nav-items-container">
                 <ul class="nav-items">
@@ -44,237 +45,179 @@
             
         <div class="intro-container">
             <div class="intro">   
-                <h1 class="intro-title title-text">Tate
-                    <svg class="blob"
-                        xmlns="http://www.w3.org/2000/svg"
-                        >
-                        <defs>
-                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%"   stop-color="#4a00e0"/>
-                                <stop offset="100%" stop-color="#8e2de2"/>
-                            </linearGradient>
-                        </defs>
-                        <path d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" >
-                            <animate attributeName="d" values="
-                                M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z;
-                                M67.8,-97.1C87.8,-78.8,103.8,-58.9,117.4,-34.1C130.9,-9.4,142,20.2,139.5,50.7C137,81.2,120.8,112.6,95.3,150.1C69.8,187.7,34.9,231.3,3.3,226.8C-28.2,222.2,-56.4,169.3,-91.6,134.9C-126.8,100.5,-169,84.6,-179.6,57.1C-190.2,29.7,-169.3,-9.3,-155.2,-49.7C-141,-90.1,-133.7,-132,-109,-148.8C-84.2,-165.6,-42.1,-157.3,-9.1,-144.8C23.9,-132.2,47.8,-115.5,67.8,-97.1Z;
-                                M137.1,-191.3C172,-163.4,190.6,-115.7,197.2,-70.1C203.8,-24.4,198.5,19.2,178.9,51.5C159.3,83.9,125.5,105,93.3,129.6C61.1,154.1,30.6,182.1,1.1,180.6C-28.4,179.1,-56.8,148.2,-81.2,121.1C-105.6,94.1,-126.1,70.8,-141.6,41.6C-157.2,12.4,-168,-22.9,-153.9,-45C-139.8,-67,-100.7,-76,-70.9,-105.5C-41.1,-135,-20.6,-185,15.3,-206C51.1,-227.1,102.3,-219.1,137.1,-191.3Z;
-                                M123.7,-157.1C162.4,-142.2,197.2,-108.8,202.8,-70.8C208.3,-32.9,184.5,9.7,169,54.2C153.6,98.7,146.4,145.2,119.7,162.7C92.9,180.2,46.4,168.6,-1.9,171.1C-50.2,173.7,-100.3,190.4,-122.2,171.3C-144.1,152.3,-137.7,97.5,-144.1,52.7C-150.6,7.9,-169.9,-26.8,-170.5,-64.8C-171,-102.8,-152.8,-144,-121.3,-161.3C-89.7,-178.5,-44.9,-171.8,-1.2,-170.1C42.5,-168.5,85,-172,123.7,-157.1Z;
-                                M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z
-                            " keyTimes="0; 0.25; 0.5; 0.75; 1" dur="20s" fill="freeze" repeatCount="indefinite"/>
-                        </path>
-                    </svg>
+                <h1 class="intro-title title-text">
+                    Tate Larkin
                 </h1>
-                <h1 class="intro-title title-text">Larkin<i class="fa-solid fa-circle period"></i></h1>
+                <h1 class="intro-subtitle">
+                    Web designer
+                </h1>
 
                 <p class="about">
-                    Self taught programmer with a passion for 
-                    Data Science, Machine Learning, and Full Stack Web Development.  
+                    Developer with a passion for Data Science and Full Stack Web Development.  
                     Driven to succeed, learn new skills and contribute to organizational success.  
                     Highly decorated mountain bike racer and overall outdoor enthusiast.
                 </p>
 
                 <div class="intro-to-contact-container">
-                    <a href="#contact" class="intro-to-contact-text download-resume">Download Resume<i class="fa-solid fa-download download-resume-arrow"></i></a>
-                    <a download href="./TateLarkinResume.pdf" class="intro-to-contact-text">Get in Touch<i class="fa-solid fa-arrow-right intro-to-contact-arrow"></i></a>
+                    <a download href="./TateLarkinResume.pdf" class="download-resume-text link">
+                        Resume</a>
+                    <a href="#contact" class="intro-to-contact-text link">
+                        Message me<i class="fa-solid fa-angle-right intro-to-contact-arrow arrow"></i>
+                    </a>
                 </div>
-            </div>
-
-            <div class="wave">
-                <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                    <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%"   stop-color="#4a00e0"/>
-                        <stop offset="100%" stop-color="#8e2de2"/>
-                    </linearGradient>
-                    <path d="M0 543L25 541.5C50 540 100 537 150 542.5C200 548 250 562 300 557.2C350 552.3 400 528.7 450 520.3C500 512 550 519 600 529.7C650 540.3 700 554.7 750 552.3C800 550 850 531 875 521.5L900 512L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z" stroke-linecap="round" stroke-linejoin="miter"></path>
-                </svg>
             </div>
         </div>               
 
         <section id="projects">
             <h1 class="projects-title">Projects</h1>
-            
-            <div class="end-wave">
-                <svg id="visual" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                    <linearGradient id="end-wave-gradient">
-                        <stop offset="0%" stop-color="#4a00e0"/>
-                        <stop offset="100%" stop-color="#8e2de2"/>
-                    </linearGradient>
-                    <path d="M0 78L25 66.8C50 55.7 100 33.3 150 31C200 28.7 250 46.3 300 53.5C350 60.7 400 57.3 450 50.8C500 44.3 550 34.7 600 39.7C650 44.7 700 64.3 750 75C800 85.7 850 87.3 875 88.2L900 89L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z" stroke-linecap="round" stroke-linejoin="miter"></path>
-                </svg>
-            </div>           
-
             <div class="projects">
-
-                <div class="grid-item item-2">
-                    <h3  class="title">
-                        User Access Review
-                    </h3>
-                    <div class="project-tags">
-                        <div class="project-tag">Chrome Extension API</div>
-                        <div class="project-tag">Firebase RTD</div>
-                        <div class="project-tag">OAuth 2.0</div>
-                        <div class="project-tag">Regex</div>
-                        <div class="project-tag">Jasmine</div>
-                        <div class="project-tag">Bitbucket Pipelines</div>
-                    </div>
-                    <p class="text medium-emphasis">
-                        User Access Review is a private Chrome Extension that I created as a contactor 
-                        for <a target="_blank" rel="noopener noreferrer" class="link" href="https://www.freshconsulting.com/">Fresh Consulting</a> which helps keep track of
-                        employee software subscriptions to aid in adding or removing members to these
-                        services.
-                        <br>
-                        <br>
-                        <a class="source-private">Source Code Private <i class="fa-solid fa-lock"></i></a>
-                    </p>
-                </div>
-
-                <div class="grid-item item-1 grid-video">
-                    <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/184047400-235e6d60-9007-458d-98d9-8e1ffefb40c8.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/184047400-235e6d60-9007-458d-98d9-8e1ffefb40c8.mov#t=0.5" controls="controls" muted="muted" class="video">
-
-                    </video>
-                </div>
-
-
-                <div class="grid-item item-3 grid-video">
-                    <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4#t=0.5" controls="controls" muted="muted" class="video">
-
-                    </video>
-                </div>
-
-                <div class="grid-item item-4">
-                    <h3  class="title">
-                        AI Flashcards
-                    </h3>
-                    <div class="project-tags">
-                        <div class="project-tag">Python</div>
-                        <div class="project-tag">Flask</div>
-                        <div class="project-tag">Jinja</div>
-                        <div class="project-tag">Tensorflow</div>
-                        <div class="project-tag">Keras</div>
-                        <div class="project-tag">Numpy</div>
-                        <div class="project-tag">OpenCV</div>
-                        <div class="project-tag">Matplotlib</div>
-                    </div>
-                    <p class="text medium-emphasis">
-                        AI Flashcards is an educational website for young kids studying basic vocabulary. It uses computer vision with 
-                        a Convolutional Neural Network to detect drawn items. Simply draw a picture 
-                        of the word on the front on a flashcard, and find out if you drew it right!
-                        <br>
-                        <br>
-                        Took 2nd place at the Utah TSA Competition in Software Development
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/AI-flashcards">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
-                    </p>
-                </div>
-        
-                <div class="grid-item item-5">
-                    <h3 class="title">
-                        Reddit Post Client
-                    </h3>
-                    <div class="project-tags">
-                        <div class="project-tag">MongoDB</div>
-                        <div class="project-tag">Express</div>
-                        <div class="project-tag">React</div>
-                        <div class="project-tag">React Router</div>
-                        <div class="project-tag">Jest</div>
-                        <div class="project-tag">React Testing Library</div>
-                        <div class="project-tag">Node</div>
-                        <div class="project-tag">Redux</div>
-                        <div class="project-tag">Passport</div>
-                        <div class="project-tag">Dotenv</div>
-                        <div class="project-tag">OAuth 2.0</div>
-                    </div>
-                    <p class="text medium-emphasis">
-                        A full stack website using the MERN stack and other technologies.
-                        In this website, you can login by creating an account, or
-                        by signing in with Google, and view posts and comments from the Reddit JSON API.
-        
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/reddit-clone">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
-                    </p>
-                </div>
-
-                <div class="grid-item item-6 grid-video">
-                    <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/183781571-ce8c47bb-7dca-4db1-bc78-bd426efe27a8.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/183781571-ce8c47bb-7dca-4db1-bc78-bd426efe27a8.mov#t=0.5" controls="controls" muted="muted" class="video">
-
-                    </video>
-                </div>
-                    
-                <div class="grid-item item-7 grid-video">  
-                    <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov#t=0.5" controls="controls" muted="muted" class="video">
-
-                    </video>
-                </div>
                 
-                <div class="grid-item item-8">
-                    <h3 class="title">
-                        Translator
-                    </h3>
-                    <div class="project-tags">
-                        <div class="project-tag">Python</div>
-                        <div class="project-tag">Rust</div>
-                        <div class="project-tag">TCP</div>
-                        <div class="project-tag">Tensorflow</div>
-                        <div class="project-tag">Keras</div>
-                        <div class="project-tag">Numpy</div>
-                        <div class="project-tag">Regex</div>
-                        <div class="project-tag">Transformer</div>
+                <div class="project-card">
+                    <div class="video">
+                        <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/184047400-235e6d60-9007-458d-98d9-8e1ffefb40c8.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/184047400-235e6d60-9007-458d-98d9-8e1ffefb40c8.mov#t=0.5" controls="controls" muted="muted" class="video"></video>
                     </div>
-                    <p class="text medium-emphasis">
-                        The Translator website uses a Transformer model to perform 
-                        Neural Machine Translation to translate from English to Spanish. 
-                        The website runs on a multi-threaded web server coded in Rust.
-        
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/translator">Learn More at Github <i class="fa-solid fa-up-right-from-square"></i></a>
-                    </p>
+                    <div class="card-content">
+                        <h3  class="title">
+                            User Access Review
+                        </h3>
+                        <div class="tags">
+                            <div class="tag">Chrome Extension API</div>
+                            <div class="tag">Firebase RTD</div>
+                            <div class="tag">OAuth 2.0</div>
+                            <div class="tag">Regex</div>
+                            <div class="tag">Jasmine</div>
+                            <div class="tag">Bitbucket Pipelines</div>
+                        </div>
+                        <p class="text">
+                            User Access Review is a private Chrome Extension that I created as a contactor 
+                            for <a target="_blank" rel="noopener noreferrer" class="link" href="https://www.freshconsulting.com/">Fresh Consulting</a> which helps keep track of
+                            employee software subscriptions to aid in adding or removing members to these
+                            services.
+                            <br>
+                            <br>
+                            <a class="source-private">Source Code Private <i class="fa-solid fa-lock"></i></a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="wave">
-                <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                    <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%"   stop-color="#4a00e0"/>
-                        <stop offset="100%" stop-color="#8e2de2"/>
-                    </linearGradient>
-                    <path d="M0 543L25 541.5C50 540 100 537 150 542.5C200 548 250 562 300 557.2C350 552.3 400 528.7 450 520.3C500 512 550 519 600 529.7C650 540.3 700 554.7 750 552.3C800 550 850 531 875 521.5L900 512L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z" stroke-linecap="round" stroke-linejoin="miter"></path>
-                </svg>
+
+                <div class="project-card">
+                    <div class="video">
+                        <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4#t=0.5" controls="controls" muted="muted" class="video"></video>
+                    </div>
+                    <div class="card-content">
+                        <h3  class="title">
+                            AI Flashcards
+                        </h3>
+                        <div class="tags">
+                            <div class="tag">Python</div>
+                            <div class="tag">Flask</div>
+                            <div class="tag">Jinja</div>
+                            <div class="tag">Tensorflow</div>
+                            <div class="tag">Keras</div>
+                            <div class="tag">Numpy</div>
+                            <div class="tag">OpenCV</div>
+                            <div class="tag">Matplotlib</div>
+                        </div>
+                        <p class="text">
+                            AI Flashcards is an educational website for young kids studying basic vocabulary. It uses computer vision with 
+                            a Convolutional Neural Network to detect drawn items. Simply draw a picture 
+                            of the word on the front on a flashcard, and find out if you drew it right!
+                            <br>
+                            <br>
+                            Took 2nd place at the Utah TSA Competition in Software Development
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/AI-flashcards">Learn more <i class="fa-solid fa-up-right-from-square"></i></a>
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="project-card">
+                    <div class="video">
+                        <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/185251762-bf53b019-7207-4b11-bfe2-c8843449be13.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/185251762-bf53b019-7207-4b11-bfe2-c8843449be13.mov#t=0.5" controls="controls" muted="muted" class="video"></video>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title">
+                            Reddit Post Client
+                        </h3>
+                        <div class="tags">
+                            <div class="tag">MongoDB</div>
+                            <div class="tag">Express</div>
+                            <div class="tag">React</div>
+                            <div class="tag">React Router</div>
+                            <div class="tag">Jest</div>
+                            <div class="tag">React Testing Library</div>
+                            <div class="tag">Node</div>
+                            <div class="tag">Redux</div>
+                            <div class="tag">Passport</div>
+                            <div class="tag">Dotenv</div>
+                            <div class="tag">OAuth 2.0</div>
+                        </div>
+                        <p class="text">
+                            A full stack website using the MERN stack and other technologies.
+                            In this website, you can login by creating an account, or
+                            by signing in with Google, and view posts and comments from the Reddit JSON API.
+            
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/reddit-clone">Learn more <i class="fa-solid fa-up-right-from-square"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video">  
+                        <video preload="metadata" src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov#t=0.5" data-canonical-src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov#t=0.5" controls="controls" muted="muted" class="video"></video>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title">
+                            Translator
+                        </h3>
+                        <div class="tags">
+                            <div class="tag">Python</div>
+                            <div class="tag">Rust</div>
+                            <div class="tag">TCP</div>
+                            <div class="tag">Tensorflow</div>
+                            <div class="tag">Keras</div>
+                            <div class="tag">Numpy</div>
+                            <div class="tag">Regex</div>
+                            <div class="tag">Transformer</div>
+                        </div>
+                        <p class="text">
+                            The Translator website uses a Transformer model to perform 
+                            Neural Machine Translation to translate from English to Spanish. 
+                            The website runs on a multi-threaded web server coded in Rust.
+            
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/translator">Learn more <i class="fa-solid fa-up-right-from-square"></i></a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         
 
         <section id="contact">
             <h1 class="contact-title">Contact Me</h1>
-            <div class="end-wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="gradient">
-                            <stop offset="0%" stop-color="#8e2de2"/>
-                            <stop offset="100%" stop-color="#4a00e0"/>
-                        </linearGradient>
-                    </defs>
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
                 <div class="contact-form">
                     <form method="post" name="contact-form" action="https://formspree.io/f/mpzknlve" id="contact-form" onsubmit="this.reset();">
                         <input type="text" class="input-name" name="name" id="name" placeholder="Full Name"></input>
                         <input type="text" class="input-email" name="email" id="email" placeholder="Email"></input>
                         <textarea class="input-message" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
                         <input type="submit" value="Send" class="submit"></input>
+                        <a download href="./TateLarkinResume.pdf" class="download-resume-footer">
+                            Download resume
+                            <i class="fa-solid fa-download"></i>
+                        </a>
                     </form>
                 </div>
-            </div>
-
-            <div class="social-icons">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tate-larkin-8059b520a/"><div class="social-icon-container"><i class="fa-brands fa-linkedin-in social-icon"></i></div></a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/tate8"><div class="social-icon-container"><i class="fa-brands fa-github social-icon"></i></div></a>
+                <div class="social-icons">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tate-larkin-8059b520a/"><div class="social-icon-container"><i class="fa-brands fa-linkedin-in social-icon"></i></div></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/tate8"><div class="social-icon-container"><i class="fa-brands fa-github social-icon"></i></div></a>
+                </div>
             </div>
         </section>
-
     </div>
 </body>
 </html>
