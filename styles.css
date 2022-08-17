@@ -123,6 +123,7 @@ a {
     justify-content: center;
     background: var(--primary-background);
     margin-top: 4rem;
+    position: relative;
 }
 
 .intro {
@@ -208,8 +209,32 @@ a {
     transform: translateX(50%);
 }
 
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 105%;
+    overflow: hidden;
+    line-height: 0;
+    fill: var(--accent-color);
+    transform: translateY(1px);
+
+    /* fill: url(#wave-gradient); */
+}
+
+.end-wave {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    width: 100%;
+    fill: var(--accent-color);
+    transform: translateY(-1px);
+    /* fill: url(#end-wave-gradient); */
+}
+
 #projects {
-    background-color: var(--secondary-background);
+    background-color: var(--primary-background);
+    position: relative;
 }
 
 .projects-intro {
@@ -220,8 +245,6 @@ a {
 }
 
 .header-wrapper {
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     background-image: var(--gradient);
     padding: 4%;
@@ -236,7 +259,9 @@ a {
 
 .projects-title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
+    background-color: var(--accent-color);
+    /* background-image: var(--gradient); */
     color: white;
 }
 
@@ -247,6 +272,8 @@ a {
     column-gap: 5rem;
     row-gap: 10rem;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 10rem !important;
+
 }
 
 .project-tags {
@@ -259,7 +286,7 @@ a {
     padding: 0.3em 0.85em;
     border-radius: 2em;
     font-weight: 500;
-    color: gray;
+    color: rgb(87, 87, 87);
     text-transform: uppercase;
     border: 3px solid var(--inverse-accent-color);
     width: -webkit-max-content;
@@ -295,19 +322,33 @@ a {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+#contact {
+    position: relative;
+}
+
 .contact {
     padding: 10rem 0 5rem 0;
     background: var(--primary-background);
 }
 
+.contact-title {
+    text-align: center;
+    font-size: 4rem;
+    background-color: var(--accent-color);
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
 .contact-me {
     text-align: center;
-    font-size: 3rem;
-    color: white
+    font-size: 4rem;
+    color: black;
+    padding-top: 2rem;
 }
 
 .contact-form {
-    margin-top: 8rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -346,7 +387,7 @@ a {
 .input-name {
     border: none;
     background-color: var(--primary-background);
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
     height: 2rem;
     margin-right: 2rem;
 }
@@ -354,7 +395,7 @@ a {
 .input-email {
     border: none;
     background-color: var(--primary-background);
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
     height: 2rem;
 }
 
@@ -365,7 +406,7 @@ a {
     color: var(--text-color);
     background-color: var(--primary-background);
     border: none;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
     height: 10rem;
 }
 
@@ -383,7 +424,7 @@ textarea {
 }
 
 .submit:hover {
-    background-image: var(--gradient);
+    background-color: var(--accent-color);
     border-color: transparent;
     color: white;
     cursor: pointer;
@@ -391,7 +432,9 @@ textarea {
 
 .learn-more {
     font-size: .9rem;
+    font-weight: 500;
     color: var(--accent-color);
+    text-transform: uppercase;
 }
 
 .learn-more:hover {
@@ -400,7 +443,9 @@ textarea {
 
 .source-private {
     font-size: .9rem;
+    font-weight: 500;
     color: var(--accent-color);
+    text-transform: uppercase;
 }
 
 .source-private:hover {
@@ -417,7 +462,7 @@ textarea {
 .social-icon-container {
     border-radius: 100%;
     aspect-ratio: 1 / 1;
-    background-image: var(--gradient);
+    background-color: var(--accent-color);
     color: var(--primary-background);
     margin: 10px;
 }
@@ -526,6 +571,14 @@ textarea {
 
     .projects-title {
         font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
     }
 
     .grid-item .title {
