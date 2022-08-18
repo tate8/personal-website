@@ -281,6 +281,17 @@ details summary:hover {
     box-shadow: 2px 4px 12px rgba(0,0,0,.08);
 }
 
+.animation-element {
+    transition: all 500ms ease;
+    transform: translate3d(-100px, 0px, 0px);
+    opacity: 0;
+}
+
+.animation-element.in-view {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 .card-content {
     padding: 3rem;
     padding-top: 2rem;
