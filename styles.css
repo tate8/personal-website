@@ -327,7 +327,8 @@ a {
     text-align: center;
     font-size: 3rem;
     background-color: var(--accent-color);
-    color: white;
+    background-color: #F2F2F2;
+    color: black;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -346,7 +347,7 @@ a {
     width: 50%;
     margin: 4rem auto;
     margin-bottom: 0;
-    padding: 30px;
+    padding: 3rem;
     border-radius: 18px;
     background-color: var(--primary-background) !important;
 }
