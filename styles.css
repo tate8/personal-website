@@ -16,7 +16,14 @@
 	border-color: #eee;
 	border-top-color: #0071e3;
 	border-radius: 50%;
-	animation: loadingspin 1s linear infinite;
+	-webkit-animation: loadingspin 1s linear infinite;
+	        animation: loadingspin 1s linear infinite;
+}
+
+@-webkit-keyframes loadingspin {
+	100% {
+			transform: rotate(360deg)
+	}
 }
 
 @keyframes loadingspin {
@@ -66,7 +73,8 @@ a {
 }
 
 ul {
-    padding-inline-start: 20px;
+    -webkit-padding-start: 20px;
+            padding-inline-start: 20px;
 }
 
 li {
@@ -170,12 +178,16 @@ details summary:hover {
 }
 
 .intro-title {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 5rem;
     color: black;
 }
 
 .intro-subtitle {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 1rem;
     color: var(--secondary-color);
@@ -264,7 +276,8 @@ details summary:hover {
 
 .projects {
     display: grid;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
     row-gap: 4rem;
     grid-template-columns: 1fr 1fr;
     padding: 7rem;
@@ -382,6 +395,30 @@ details summary:hover {
     padding: 3rem;
     border-radius: 18px;
     background-color: var(--primary-background) !important;
+}
+
+::-webkit-input-placeholder {
+    font-family: var(--default-font);
+    color: gray;
+    font-size: 1rem;
+}
+
+::-moz-placeholder {
+    font-family: var(--default-font);
+    color: gray;
+    font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+    font-family: var(--default-font);
+    color: gray;
+    font-size: 1rem;
+}
+
+::-ms-input-placeholder {
+    font-family: var(--default-font);
+    color: gray;
+    font-size: 1rem;
 }
 
 ::placeholder {
