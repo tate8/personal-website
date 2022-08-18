@@ -65,6 +65,27 @@ a {
     text-decoration: none;
 }
 
+ul {
+    padding-inline-start: 20px;
+}
+
+li {
+    color: #6e6e73;
+}
+
+li:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+details summary {
+    margin-top: 10px;
+    color: var(--accent-color);
+}
+
+details summary:hover {
+    cursor: pointer;
+}
+
 .site-container {
     display: none;
     max-width: 1600px;
@@ -283,7 +304,7 @@ a {
     width: -moz-max-content;
     width: max-content;
     margin: 3px;
-    font-size: .8rem;
+    font-size: .75rem;
 }
 
 .text {
@@ -541,6 +562,10 @@ textarea {
     }
 
     .text {
+        font-size: 0.85rem;
+    }
+
+    li {
         font-size: 0.85rem;
     }
 
