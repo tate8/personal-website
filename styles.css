@@ -357,6 +357,10 @@ details summary:hover {
     margin: auto;
 }
 
+video {
+    object-fit: cover;
+}
+
 
 #contact {
     position: relative;
