@@ -113,8 +113,9 @@ details summary:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.85);
     z-index: 5;
+    backdrop-filter: blur(8px);
 }
 
 .navbar-scrolled {
