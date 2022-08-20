@@ -58,7 +58,7 @@ html {
 body {
     margin: 0;
     width: 100%;
-    background-color: var(--primary-background);
+    background-color: #F2F2F2;
     overflow: visible;
 }
 
@@ -166,7 +166,7 @@ details summary:hover {
     align-items: center;
     justify-content: center;
     background: var(--primary-background);
-    margin-top: 4rem;
+    margin-top: 3rem;
     position: relative;
 }
 
@@ -174,7 +174,7 @@ details summary:hover {
     background: var(--primary-background);
     width: 70%;
     position: relative;
-    margin-bottom: 10%;
+    margin-bottom: 7.5%;
 }
 
 .intro-title {
@@ -251,13 +251,89 @@ details summary:hover {
     text-decoration: underline;
 }
 
+/* Why Me */
+
+.why-me-title {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    background-color: #F2F2F2;
+    color: black;
+}
+
+.why-me-cards-container {
+    background-color: #F2F2F2;
+    padding: 10%;
+    padding-top: 7%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.why-me-card {
+    padding: 30px;
+    width: 15rem;
+    height: 16rem;
+    background-color: white;
+    border-bottom: 6px solid var(--accent-color);
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+}
+
+.why-me-card-title {
+    text-align: center;
+}
+
+.why-me-card-text {
+    text-align: center;
+    color: #6e6e73;
+}
+
+.why-me-card-icon-container {
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+.quality-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+
+.time-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+
+.communication-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+
+path {
+    transform: scale(1.6);
+    fill: darkgray;
+}
+
 /* Projects */
 
 #projects {
-    background-color: var(--primary-background);
     position: relative;
     background-color: #F2F2F2;
-    padding-top: 110px;
 }
 
 .projects-intro {
@@ -394,10 +470,11 @@ video {
     gap: 10px;
     width: 50%;
     margin: 4rem auto;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding: 3rem;
     border-radius: 18px;
     background-color: var(--primary-background) !important;
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
 }
 
 ::-webkit-input-placeholder {
@@ -567,6 +644,7 @@ textarea {
         width: 80%;
         max-width: 80vw;
         margin: auto;
+        margin-bottom: 20px;
         margin-top: 4rem;
         padding: 30px;
     }
@@ -591,13 +669,32 @@ textarea {
         padding-top: 2rem;
     }
 
+    .why-me-card {
+        padding: 20px;
+        padding-top: 30px;
+    }
+    
+    .why-me-card-title {
+        font-size: 1.1rem;
+    }
+    
+    .why-me-card-text {
+        font-size: .9rem;
+    }
+
     .projects {
         padding: 10%;
         row-gap: 2rem;
     }
 
     .projects-title {
-        font-size: 10vw;
+        font-size: min(10vw, 3.5rem);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .why-me-title {
+        font-size: min(10vw, 3.5rem);
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -655,6 +752,7 @@ textarea {
     }
 }
 
+/* very small mobile */
 @media only screen and (max-width: 450px) {
     .intro {
         margin-bottom: 30%;
