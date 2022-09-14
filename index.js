@@ -2,10 +2,6 @@ const $animation_elements = $(".animation-element");
 const $window = $(window);
 
 $(function () {
-  $(".preload").fadeOut(1000, function () {
-    $(".site-container").fadeIn(1000);
-  });
-
   $window.on("scroll resize", check_if_in_view);
   $window.trigger("scroll", check_if_in_view);
 });
