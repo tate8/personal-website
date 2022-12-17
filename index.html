@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Tate Larkin</title>
+    <meta name="description" content="Tate Larkin's personal portfolio website with description and personal projects">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JavaScript -->
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="preload">
+        <div class="loadingspinner"></div>
+    </div>
+    <div class="site-container">
+        <div id="navbar" class="navbar">
+            <div class="nav-brand">
+            </div>
+            <div class="nav-items-container">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#intro">Tate Larkin</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+            
+        <div class="intro-container" id="intro">
+            <div class="intro">   
+                <p class="about">
+                    <strong class="emphasis">Tate Larkin.</strong>
+                    Self taught programmer with a passion for machine learning and full stack web development.
+                    <br>  
+                    <strong class="accent-text">Driven to succeed</strong>, learn new skills and contribute to organizational success.  
+                    Highly decorated 
+                    <strong class="accent-text">mountain bike racer</strong> and overall outdoor enthusiast.
+                </p>
+
+                <div class="intro-to-contact-container">
+                    <a href="#footer" class="download-resume-text link">
+                        Contact</a>
+                    <a download href="./TateLarkinResume.pdf" class="intro-to-contact-text link">
+                        Resume<i class="fa-solid fa-download intro-to-contact-arrow arrow"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-down-container">
+                <a href="#projects"><i class="fa-solid fa-angle-down scroll-down-icon"></i></a>
+            </div>
+        </div>
+
+        <section id="projects">
+            <h1 class="projects-title">Featured Projects</h1>
+            <div class="projects">
+                
+                <div class="project-card">
+                    <div class="video-container animation-element">
+                        <video poster="./posters/UAR.png" preload="metadata" src="https://user-images.githubusercontent.com/70344865/185727476-0a4c7a19-f7b3-44e0-8140-bcd081000b27.mov" controls="controls" muted="muted" class="video"></video>
+                    </div>
+                    <div class="card-content animation-element">
+                        <h3  class="title">
+                            User Access Review
+                        </h3>
+                        <div class="tags">
+                            <div class="tag">Chrome API</div>
+                            <div class="tag">Firebase RTD</div>
+                            <div class="tag">OAuth 2.0</div>
+                            <div class="tag">Regex</div>
+                            <div class="tag">Jasmine</div>
+                            <div class="tag">Bitbucket Pipelines</div>
+                        </div>
+                        <p class="text">
+                            User Access Review is a private Chrome Extension that I created as a contactor 
+                            for <strong class="link"><a target="_blank" rel="noopener noreferrer" href="https://www.freshconsulting.com/">Fresh Consulting</a> </strong>
+                            to parse SaaS websites and track which employees are enrolled in what services to reduce company spend on unnecessary subscriptions.
+
+                            <details>
+                                <summary>More info</summary>
+                                <ul>
+                                    <li>Securely stored data inside Firebase with UI inside the extension to efficiently manage the data</li>
+                                    <li>Implemented seamless OAuth 2.0 authentication for Google and other providers</li>
+                                    <li>Integrated the extension with Google Workspace using the Google Directory API</li>
+                                    <li>Worked in a CI-CD environment with Bitbucket Pipelines using linting via ESLint and testing via Jasmine</li>
+                                </ul>
+                            </details>
+                            
+                            <br>
+                            <strong><p class="source-private">Source Code Private <i class="fa-solid fa-lock"></i></p></strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container animation-element">
+                        <video poster="./posters/cards.png" preload="metadata" src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4" controls="controls" muted="muted" class="video"></video>
+                    </div>
+                    <div class="card-content animation-element">
+                        <h3  class="title">
+                            AI Flashcards
+                        </h3>
+                        <div class="tags">
+                            <div class="tag">Flask</div>
+                            <div class="tag">Tensorflow</div>
+                            <div class="tag">Keras</div>
+                            <div class="tag">Numpy</div>
+                            <div class="tag">Matplotlib</div>
+                        </div>
+                        <p class="text">
+                            AI Flashcards is an educational website for young kids studying basic vocabulary. It uses computer vision with 
+                            a Convolutional Neural Network to detect drawn items. Simply draw a picture 
+                            of the word on the front on a flashcard, and find out if you drew it right!
+                            <br>
+                            <br>
+                            Took 2nd place at the Utah TSA Competition in Software Development
+                            <br>
+                            <br>
+                            <strong>
+                                <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/AI-flashcards">
+                                    Learn more<i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="project-card">
+                    <div class="video-container animation-element">
+                        <video poster="./posters/reddit.png" preload="metadata" src="https://user-images.githubusercontent.com/70344865/185251762-bf53b019-7207-4b11-bfe2-c8843449be13.mov" controls="controls" muted="muted" class="video"></video>
+                    </div>
+                    <div class="card-content animation-element">
+                        <h3 class="title">
+                            Reddit Post Client
+                        </h3>
+                        <div class="tags">
+                            <div class="tag">MongoDB</div>
+                            <div class="tag">Express</div>
+                            <div class="tag">React</div>
+                            <div class="tag">React Router</div>
+                            <div class="tag">Jest</div>
+                            <div class="tag">React Testing Library</div>
+                            <div class="tag">Redux</div>
+                            <div class="tag">OAuth 2.0</div>
+                        </div>
+                        <p class="text">
+                            A full stack website using the MERN stack and other technologies.
+                            In this website, you can login by creating an account, or
+                            by signing in with Google, and view posts and comments from the Reddit JSON API.
+            
+                            <br>
+                            <br>
+                            <strong>
+                                <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/reddit-clone">
+                                    Learn more<i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container animation-element">  
+                        <video poster="./posters/translator.png" preload="metadata" src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov" controls="controls" muted="muted" class="video"></video>
+                    </div>
+                    <div class="card-content animation-element">
+                        <h3 class="title">
+                            Translator
+                        </h3>
+                        <div class="tags">
+                            <div class="tag">Rust</div>
+                            <div class="tag">TCP</div>
+                            <div class="tag">Tensorflow</div>
+                            <div class="tag">Keras</div>
+                            <div class="tag">Numpy</div>
+                        </div>
+                        <p class="text">
+                            The Translator website uses a Transformer model to perform 
+                            Neural Machine Translation to translate from English to Spanish. 
+                            The website runs on a multi-threaded web server coded in Rust.
+            
+                            <br>
+                            <br>
+                            <strong>
+                                <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/translator">
+                                    Learn more<i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="footer">
+            <div class="footer-grid">
+                <div class="email-block">
+                    <h2 class="email-label">Get in touch</h2>
+                    <a href="mailto:tatelarkin@icloud.com" class="email">tatelarkin@icloud.com</a>
+                </div>
+                <div class="social-block">
+                    <h2 class="social-label">Lets connect</h2>
+                    <div class="social-items">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tate-larkin-8059b520a/" class="social">Linkedin</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/tate8" class="social">Github</a>
+                        <a target="_blank" rel="noopener noreferrer" download href="./TateLarkinResume.pdf" class="social">Resume</a>
+                    </div>
+                </div>
+                <h3 class="created-by">Made with ❤️ | Tate Larkin</h3>
+                <small class="copyright">&copy; Copyright 2022</small>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
