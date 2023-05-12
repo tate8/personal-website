@@ -286,7 +286,7 @@ details summary:hover {
     max-width: 90%;
 }
 
-.project-card:nth-child(even) {
+.project-card:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
