@@ -355,6 +355,35 @@ details summary:hover {
     overflow: hidden;
 }
 
+.carousel {
+  width: fit-content;
+  height: fit-content;
+  font-size: 0;
+}
+
+.carousel-image {
+  width: 35rem;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden; 
+}
+
+.carousel-next {
+  position: absolute !important; 
+  bottom: 47%;
+  right: -2.5%;
+  font-size: calc(2rem * var(--font-scaling-factor));
+  color: rgb(50, 50, 50);
+  background: radial-gradient(white 50%, transparent 50%);
+}
+
+.carousel-next:hover {
+  cursor: pointer;
+  color: rgb(94, 94, 94);
+
+}
+
 .learn-more {
     font-size: calc(.9rem * var(--font-scaling-factor));
     font-weight: 800;
@@ -470,6 +499,10 @@ details summary:hover {
         width: 60rem;
     }
 
+    .carousel-image {
+      width: 60rem
+    }
+
 }
 
 @media only screen and (max-width: 2560px) {
@@ -492,6 +525,9 @@ details summary:hover {
     }
     .video {
         width: 35rem;
+    }
+    .carousel-image {
+      width: 35rem
     }
 }
 
@@ -518,12 +554,15 @@ details summary:hover {
         gap: 2rem;
     }
 
-    .project-card:nth-child(even) {
+    .project-card:nth-child(odd) {
         flex-direction: column;
     }
 
     .video {
         width: 600px;
+    }
+    .carousel-image {
+      width: 600px
     }
 
     .project-card {
@@ -572,6 +611,10 @@ details summary:hover {
     .video {
         width: 35rem;
         max-width: 80vw;
+    }
+    .carousel-image {
+      width: 35rem;
+      max-width: 80vw;
     }
 
     .projects-title {

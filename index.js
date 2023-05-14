@@ -1,3 +1,4 @@
+// Fade in animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -19,3 +20,26 @@ $(window).scroll(function () {
     document.querySelector('#navbar').classList.remove('navbar-scrolled')
   }
 });
+
+// Carousel
+class CircularArray {
+  constructor(data) {
+    this.data = data;
+    this.currentIndex = 0;
+  }
+
+  next() {
+    const currentValue = this.data[this.currentIndex];
+    this.currentIndex = (this.currentIndex + 1) % this.data.length;
+    return currentValue;
+  }
+}
+
+let carouselImageSources = ['./posters/db.png', './posters/settings.png']
+const circularArray = new CircularArray(carouselImageSources);
+let carouselImage = document.querySelector('.carousel-image')
+carouselImage.setAttribute('src', circularArray.next())
+let carouselNextButton = document.querySelector('.carousel-next')
+carouselNextButton.addEventListener('click', () => {
+  carouselImage.setAttribute('src', circularArray.next())
+})
