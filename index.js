@@ -58,18 +58,27 @@ function updateCarouselDots() {
 
 function changeImgSource() {
   carouselImage.classList.add('loading')
-  loader.classList.remove('hidden')
   const image = new Image()
   image.src = circularArray.next()
 
-  // setTimeout(() => {
-  //   carouselImage.classList.remove('loading');
-  //   loader.classList.add('hidden')
-  //   carouselImage.style.backgroundImage = `url('${image.src}')`;
-  // }, 1000)
+  setTimeout(() => {
+    if (loader.classList.contains('hidden') && !image.complete) {
+      loader.classList.remove('hidden')
+    }
+  }, 100)
+
   image.addEventListener('load', () => {
-    carouselImage.classList.remove('loading');
-    loader.classList.add('hidden')
+    carouselImage.classList.remove('loading')
+    if (!loader.classList.contains('hidden')) {
+      loader.classList.add('hidden');
+    }
     carouselImage.style.backgroundImage = `url('${image.src}')`;
   });
+  // setTimeout(() => {
+  //   carouselImage.classList.remove('loading');
+  //   if (!loader.classList.contains('hidden')) {
+  //     loader.classList.add('hidden');
+  //   }
+  //   carouselImage.style.backgroundImage = `url('${image.src}')`;
+  // }, 1000)
 }
