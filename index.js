@@ -62,23 +62,23 @@ function changeImgSource() {
   image.src = circularArray.next()
 
   setTimeout(() => {
-    if (loader.classList.contains('hidden') && !image.complete) {
-      loader.classList.remove('hidden')
+    if (image.complete) {
+      if (!loader.classList.contains('hidden')) {
+        loader.classList.add('hidden');
+      }
+      carouselImage.style.backgroundImage = `url('${image.src}')`;
+      carouselImage.classList.remove('loading');
+    } else {
+      if (loader.classList.contains('hidden')) {
+        loader.classList.remove('hidden')
+      }
+      image.addEventListener('load', () => {
+        if (!loader.classList.contains('hidden')) {
+          loader.classList.add('hidden');
+        }
+        carouselImage.style.backgroundImage = `url('${image.src}')`;
+        carouselImage.classList.remove('loading');
+      });
     }
-  }, 100)
-
-  image.addEventListener('load', () => {
-    carouselImage.classList.remove('loading')
-    if (!loader.classList.contains('hidden')) {
-      loader.classList.add('hidden');
-    }
-    carouselImage.style.backgroundImage = `url('${image.src}')`;
-  });
-  // setTimeout(() => {
-  //   carouselImage.classList.remove('loading');
-  //   if (!loader.classList.contains('hidden')) {
-  //     loader.classList.add('hidden');
-  //   }
-  //   carouselImage.style.backgroundImage = `url('${image.src}')`;
-  // }, 1000)
+  }, 150)
 }

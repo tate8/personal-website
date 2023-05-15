@@ -360,21 +360,22 @@ details summary:hover {
   width: fit-content;
   height: fit-content;
   font-size: 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .carousel-image {
   width: 35rem;
   aspect-ratio: 16/9;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   background: none center center no-repeat;
   background-size: cover;
-  transition: all .15s ease;
+  transition: opacity 0.1s ease;
 }
 
 .loading {
-  background-image: none !important ;
+  opacity: 0;
 }
 
 .loader {
