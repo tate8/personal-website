@@ -39,6 +39,7 @@ const carouselImageSources = ['./posters/siteReport.png', './posters/settings.pn
 const circularArray = new CircularArray(carouselImageSources);
 const carouselNextButton = document.querySelector('.carousel-next')
 const carouselImage = document.querySelector('.carousel-image')
+const loader = document.querySelector('.loader')
 changeImgSource()
 
 carouselNextButton.addEventListener('click', () => {
@@ -57,18 +58,18 @@ function updateCarouselDots() {
 
 function changeImgSource() {
   carouselImage.classList.add('loading')
+  loader.classList.remove('hidden')
   const image = new Image()
   image.src = circularArray.next()
 
   // setTimeout(() => {
   //   carouselImage.classList.remove('loading');
+  //   loader.classList.add('hidden')
   //   carouselImage.style.backgroundImage = `url('${image.src}')`;
   // }, 1000)
   image.addEventListener('load', () => {
     carouselImage.classList.remove('loading');
+    loader.classList.add('hidden')
     carouselImage.style.backgroundImage = `url('${image.src}')`;
   });
-
-
-  // carouselImage.style.backgroundImage = `url(${circularArray.next()})`
 }
