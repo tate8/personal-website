@@ -56,5 +56,19 @@ function updateCarouselDots() {
 }
 
 function changeImgSource() {
-  carouselImage.style.backgroundImage = `url(${circularArray.next()})`
+  carouselImage.classList.add('loading')
+  const image = new Image()
+  image.src = circularArray.next()
+
+  // setTimeout(() => {
+  //   carouselImage.classList.remove('loading');
+  //   carouselImage.style.backgroundImage = `url('${image.src}')`;
+  // }, 1000)
+  image.addEventListener('load', () => {
+    carouselImage.classList.remove('loading');
+    carouselImage.style.backgroundImage = `url('${image.src}')`;
+  });
+
+
+  // carouselImage.style.backgroundImage = `url(${circularArray.next()})`
 }

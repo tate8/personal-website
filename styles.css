@@ -375,6 +375,10 @@ details summary:hover {
   transition: all .15s ease;
 }
 
+.loading {
+  background-image: url(./media/loading.gif) !important;
+}
+
 .carousel-next {
   position: absolute !important; 
   bottom: 47%;
