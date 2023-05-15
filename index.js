@@ -62,14 +62,14 @@ function changeImgSource() {
   const image = new Image()
   image.src = circularArray.next()
 
-  setTimeout(() => {
-    carouselImage.classList.remove('loading');
-    loader.classList.add('hidden')
-    carouselImage.style.backgroundImage = `url('${image.src}')`;
-  }, 1000)
-  // image.addEventListener('load', () => {
+  // setTimeout(() => {
   //   carouselImage.classList.remove('loading');
   //   loader.classList.add('hidden')
   //   carouselImage.style.backgroundImage = `url('${image.src}')`;
-  // });
+  // }, 1000)
+  image.addEventListener('load', () => {
+    carouselImage.classList.remove('loading');
+    loader.classList.add('hidden')
+    carouselImage.style.backgroundImage = `url('${image.src}')`;
+  });
 }
