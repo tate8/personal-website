@@ -35,7 +35,7 @@ class CircularArray {
   }
 }
 
-const carouselImageSources = ['./posters/db.png', './posters/settings.png']
+const carouselImageSources = ['./posters/siteReport.png', './posters/settings.png', './posters/extensionPopup.png']
 const circularArray = new CircularArray(carouselImageSources);
 const carouselNextButton = document.querySelector('.carousel-next')
 const carouselImage = document.querySelector('.carousel-image')

@@ -370,7 +370,7 @@ details summary:hover {
   overflow: hidden;
 
   background: none center center no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   transition: all .15s ease;
 }
