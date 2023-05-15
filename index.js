@@ -35,11 +35,26 @@ class CircularArray {
   }
 }
 
-let carouselImageSources = ['./posters/db.png', './posters/settings.png']
+const carouselImageSources = ['./posters/db.png', './posters/settings.png']
 const circularArray = new CircularArray(carouselImageSources);
-let carouselImage = document.querySelector('.carousel-image')
-carouselImage.setAttribute('src', circularArray.next())
-let carouselNextButton = document.querySelector('.carousel-next')
+const carouselNextButton = document.querySelector('.carousel-next')
+const carouselImage = document.querySelector('.carousel-image')
+changeImgSource()
+
 carouselNextButton.addEventListener('click', () => {
-  carouselImage.setAttribute('src', circularArray.next())
+  updateCarouselDots()
+  changeImgSource()
 })
+
+function updateCarouselDots() {
+  const carouselDots = document.querySelector('.carousel-dots').children
+  for (let dot of carouselDots) {
+    dot.classList.remove('active')
+  }
+  let i = circularArray.currentIndex
+  carouselDots[i].classList.add('active')
+}
+
+function changeImgSource() {
+  carouselImage.style.backgroundImage = `url(${circularArray.next()})`
+}
