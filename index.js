@@ -82,3 +82,23 @@ function changeImgSource() {
     }
   }, 150)
 }
+
+// Image enlarging
+const enlargableImage = document.querySelector('.enlargable-image')
+enlargableImage.addEventListener('click', () => {
+  let src = enlargableImage.style.backgroundImage
+  const fullScreenImage = document.createElement('div')
+  fullScreenImage.style.background = 'rgba(0,0,0,.5) '+src+' no-repeat center'
+  fullScreenImage.style.backgroundSize = 'contain'
+  fullScreenImage.style.width = '100%'
+  fullScreenImage.style.height = '100%'
+  fullScreenImage.style.position = 'fixed'
+  fullScreenImage.style.zIndex = '9'
+  fullScreenImage.style.top = '0'
+  fullScreenImage.style.left = '0'
+  fullScreenImage.style.cursor = 'zoom-out'
+  fullScreenImage.addEventListener('click', (e) => {
+    e.target.remove()
+  })
+  document.body.appendChild(fullScreenImage)
+})
