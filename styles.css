@@ -44,10 +44,15 @@ li {
     color: #6e6e73;
 }
 
+details * {
+  font-size: calc(18px * var(--font-scaling-factor));
+}
+
 details summary {
     margin-top: 10px;
     width: fit-content;
 }
+
 
 details summary:hover {
     cursor: pointer;
@@ -177,7 +182,7 @@ details summary:hover {
 }
 
 .arrow {
-    font-size: calc(1rem * var(--font-scaling-factor));
+    font-size: calc(1.25rem * var(--font-scaling-factor));
 }
 
 .intro-to-contact-container {
@@ -411,7 +416,7 @@ details summary:hover {
   bottom: 47%;
   right: 0;
   transform: translateX(50%);
-  font-size: calc(2rem * var(--font-scaling-factor));
+  font-size: calc(2.25rem * var(--font-scaling-factor));
   color: rgb(79, 79, 79);
   background: radial-gradient(white 50%, transparent 50%);
 }
@@ -701,6 +706,15 @@ details summary:hover {
     .project-card:last-child {
         margin-bottom: 7.5rem;
     }
+
+    .carousel-dots {
+      bottom: -15px;
+    }
+
+    .dot {
+      height: 5px;
+      width: 5px;
+    }
 }
 
 /* very small mobile */
@@ -733,9 +747,23 @@ details summary:hover {
     }
 }
 
-/* iPhone SE */
 @media only screen and (max-width: 399px) {
   :root {
     --font-scaling-factor: .65;
+  }
+  .nav-item:first-child a {
+    font-size: calc(1.65rem * var(--font-scaling-factor));
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  :root {
+    --font-scaling-factor: .55;
+  }
+  .nav-item:first-child a {
+    font-size: calc(1.4rem * var(--font-scaling-factor));
+  }
+  .nav-items {
+    margin: .7rem;
   }
 }
