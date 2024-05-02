@@ -69,10 +69,34 @@
                 <a href="#projects"><i class="fa-solid fa-angle-down scroll-down-icon"></i></a>
             </div>
         </div>
-
         <section id="projects">
             <h1 class="projects-title">Featured Projects</h1>
             <div class="projects">
+              <div class="app-project-card">
+                <div class="iphone-screens animation-element">
+                  <img src="./posters/redeem.png" class="iphone-screen" alt="iPhone 15 Screenshot">
+                  <img src="./posters/home.png" class="iphone-screen" alt="iPhone 15 Screenshot">
+                  <img src="./posters/code.png" class="iphone-screen" alt="iPhone 15 Screenshot">
+                </div>
+                <div class="card-content animation-element">
+                  <h3  class="title">
+                      Dirty Dog's Car Wash
+                  </h3>
+                  <div class="tags">
+                      <div class="tag">React Native</div>
+                      <div class="tag">Expo</div>
+                      <div class="tag">Firestore</div>
+                      <div class="tag">MobX</div>
+                      <div class="tag">GCP</div>
+                  </div>
+                  <p class="text">
+                    Spearheaded the development of a proprietary customer engagement and membership app, and an admin portal for Dirty Dog's Car Wash, an Atlanta-based private equity-backed company. This project involved end-to-end management, from planning and development to release.
+                      <br>
+                      <br>
+                      <strong><p class="source-private">See resume <i class="fa-solid fa-download"></i></p></strong>
+                  </p>
+              </div>
+              </div>
                 
                 <div class="project-card">
                     <div class="carousel animation-element">
@@ -98,21 +122,10 @@
                             <div class="tag">Bitbucket Pipelines</div>
                         </div>
                         <p class="text">
-                            User Access Review is a private Chrome Extension that I created as a contactor 
-                            for <strong class="link"><a target="_blank" rel="noopener noreferrer" href="https://www.freshconsulting.com/">Fresh Consulting</a></strong>
-                             to parse SaaS websites and track which employees are enrolled in what services to reduce company spend on unnecessary subscriptions.
-                            <details>
-                                <summary>More info</summary>
-                                <ul>
-                                    <li>Securely stored data inside Firebase with UI inside the extension to efficiently manage the data</li>
-                                    <li>Implemented seamless OAuth 2.0 authentication for Google and other providers</li>
-                                    <li>Integrated the extension with Google Workspace using the Google Directory API</li>
-                                    <li>Worked in a CI-CD environment with Bitbucket Pipelines using linting via ESLint and testing via Jasmine</li>
-                                </ul>
-                            </details>
-                            
-                            <br>
-                            <strong><p class="source-private">Source Code Private <i class="fa-solid fa-lock"></i></p></strong>
+                          Worked directly with the CTO of <strong class="link"><a target="_blank" rel="noopener noreferrer" href="https://www.freshconsulting.com/">Fresh Consulting</a></strong> to define parameters, develop an appropriate database schema, and code a Chrome Extension to manage employee SaaS subscriptions by parsing their websites for user emails
+                          <br>
+                          <br>
+                          <strong><p class="source-private">See resume <i class="fa-solid fa-download"></i></p></strong>
                         </p>
                     </div>
                 </div>
@@ -133,7 +146,7 @@
                             <div class="tag">Matplotlib</div>
                         </div>
                         <p class="text">
-                            AI Flashcards is an educational website for young kids studying basic vocabulary. It uses computer vision with 
+                            Developed an educational website for young kids studying basic vocabulary. Used computer vision with 
                             a Convolutional Neural Network to detect drawn items. Simply draw a picture 
                             of the word on the front on a flashcard, and find out if you drew it right!
                             <br>
@@ -150,71 +163,6 @@
                     </div>
                 </div>
         
-                <div class="project-card">
-                    <div class="video-container animation-element">
-                        <video poster="./posters/reddit.png" preload="metadata" src="https://user-images.githubusercontent.com/70344865/185251762-bf53b019-7207-4b11-bfe2-c8843449be13.mov" controls="controls" muted="muted" class="video"></video>
-                    </div>
-                    <div class="card-content animation-element">
-                        <h3 class="title">
-                            Reddit Post Client
-                        </h3>
-                        <div class="tags">
-                            <div class="tag">MongoDB</div>
-                            <div class="tag">Express</div>
-                            <div class="tag">React</div>
-                            <div class="tag">React Router</div>
-                            <div class="tag">Jest</div>
-                            <div class="tag">React Testing Library</div>
-                            <div class="tag">Redux</div>
-                            <div class="tag">OAuth 2.0</div>
-                        </div>
-                        <p class="text">
-                            A full stack website using the MERN stack and other technologies.
-                            In this website, you can login by creating an account, or
-                            by signing in with Google, and view posts and comments from the Reddit JSON API.
-            
-                            <br>
-                            <br>
-                            <strong>
-                                <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/reddit-clone">
-                                    Learn more<i class="fa-solid fa-up-right-from-square"></i>
-                                </a>
-                            </strong>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="video-container animation-element">  
-                        <video poster="./posters/translator.png" preload="metadata" src="https://user-images.githubusercontent.com/70344865/183550355-076d19e5-fab1-4674-92ca-b16f2ba5a768.mov" controls="controls" muted="muted" class="video"></video>
-                    </div>
-                    <div class="card-content animation-element">
-                        <h3 class="title">
-                            Translator
-                        </h3>
-                        <div class="tags">
-                            <div class="tag">Rust</div>
-                            <div class="tag">TCP</div>
-                            <div class="tag">Tensorflow</div>
-                            <div class="tag">Keras</div>
-                            <div class="tag">Numpy</div>
-                        </div>
-                        <p class="text">
-                            The Translator website uses a Transformer model to perform 
-                            Neural Machine Translation to translate from English to Spanish. 
-                            The website runs on a multi-threaded web server coded in Rust.
-            
-                            <br>
-                            <br>
-                            <strong>
-                                <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/translator">
-                                    Learn more<i class="fa-solid fa-up-right-from-square"></i>
-                                </a>
-                            </strong>
-                        </p>
-                    </div>
-                </div>
-            </div>
         </section>
         
 
@@ -233,7 +181,7 @@
                     </div>
                 </div>
                 <h3 class="created-by">Made with ❤️ | Tate Larkin</h3>
-                <small class="copyright">&copy; Copyright 2023</small>
+                <small class="copyright">&copy; Copyright 2024</small>
             </div>
         </section>
     </div>

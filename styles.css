@@ -565,6 +565,28 @@ details summary:hover {
     font-size: calc(1rem * var(--font-scaling-factor));
 }
 
+
+/* Iphone screens */
+.app-project-card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 2rem;
+  max-width: 80vw;
+}
+
+.iphone-screens {
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.iphone-screen {
+  width: 300px;
+  max-width: 60vw;
+}
+
 /* For 4K and above */
 @media only screen and (min-width: 2560px) {
     :root {
