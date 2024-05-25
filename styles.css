@@ -390,8 +390,8 @@ details summary:hover {
   transition: opacity 0.1s ease;
 }
 
-.carousel-image:hover {
-  cursor: zoom-in;
+.no-aspect {
+  aspect-ratio: auto;
 }
 
 .loading {
