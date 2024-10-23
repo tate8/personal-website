@@ -390,6 +390,10 @@ details summary:hover {
   transition: opacity 0.1s ease;
 }
 
+.carousel-image.loading {
+  opacity: 0.5; /* Slight transparency while loading */
+}
+
 .no-aspect {
   aspect-ratio: auto;
 }

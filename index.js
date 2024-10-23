@@ -58,30 +58,26 @@ function setupCarousel(carouselClassName, imageSources) {
     }
 
     function changeImgSource() {
+      // Show loader while loading the image
       carouselImage.classList.add('loading');
+      loader.classList.remove('hidden');  // Show loader
+      
       const image = new Image();
       image.src = circularArray.next();
+      
+     
+      image.onload = () => {
+        // Hide the loader once the image is loaded
+        loader.classList.add('hidden');
+        carouselImage.classList.remove('loading');
+        carouselImage.src = image.src;
+      };
 
-      setTimeout(() => {
-        if (image.complete) {
-          if (!loader.classList.contains('hidden')) {
-            loader.classList.add('hidden');
-          }
-          carouselImage.setAttribute('src', image.src)
-          carouselImage.classList.remove('loading');
-        } else {
-          if (loader.classList.contains('hidden')) {
-            loader.classList.remove('hidden');
-          }
-          image.addEventListener('load', () => {
-            if (!loader.classList.contains('hidden')) {
-              loader.classList.add('hidden');
-            }
-            carouselImage.style.backgroundImage = `url('${image.src}')`;
-            carouselImage.classList.remove('loading');
-          });
-        }
-      }, 150);
+      image.onerror = () => {
+        // Hide the loader and log error if the image fails to load
+        loader.classList.add('hidden');
+        console.error('Image failed to load:', image.src);
+      };
     }
 
     // Trigger loading of first source
