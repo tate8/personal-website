@@ -1,225 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Tate Larkin</title>
-    <meta name="description" content="Tate Larkin's personal portfolio website with description and personal projects">
+    <meta
+      name="description"
+      content="Tate Larkin's personal portfolio website with description and personal projects"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- JavaScript -->
     <script defer src="./index.js"></script>
-</head>
-<body>
-    <div class="preload">
-        <div class="loadingspinner"></div>
-    </div>
+  </head>
+  <body>
     <div class="site-container">
-        <div id="navbar" class="navbar">
-            <div class="nav-brand">
-            </div>
-            <div class="nav-items-container">
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="#intro">Tate Larkin</a></li>
-                    <li class="nav-item"><a href="#projects">Projects</a></li>
-                    <li class="nav-item"><a href="#footer">Contact</a></li>
-                </ul>
-            </div>
+      <div class="preload">
+        <div class="loadingspinner"></div>
+      </div>
+      <div id="navbar" class="navbar">
+        <div class="nav-brand"></div>
+        <div class="site-container">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#intro">Tate Larkin</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#footer">Contact</a></li>
+          </ul>
         </div>
-            
-        <div class="intro-container" id="intro">
-            <div class="intro">   
-                <p class="about">
-                    <strong class="emphasis">Tate Larkin</strong>. Developer with a passion for building intelligent systems.
-                    <br>
-                    <strong class="accent-text">Driven to succeed</strong>, learn new skills and contribute to organizational success.
-                    <br><br>
-                    I teach machines how to <strong class="accent-text">think</strong>.
-                   
-                </p>
-
-                <div class="intro-to-contact-container">
-                    <a href="#footer" class="download-resume-text link">
-                        Contact</a>
-                    <a download href="./tate_larkin_resume.pdf" class="intro-to-contact-text link">
-                        Resume<i class="fa-solid fa-download intro-to-contact-arrow arrow"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="scroll-down-container">
-                <a href="#projects"><i class="fa-solid fa-angle-down scroll-down-icon"></i></a>
-            </div>
-        </div>
-        <section id="projects">
-            <h1 class="projects-title">Featured Projects</h1>
-            <div class="projects">
-              <div class="app-project-card">
-                <div class="iphone-screens animation-element">
-                  <img src="./posters/redeem.png" class="iphone-screen" alt="iPhone 15 Screenshot">
-                  <img src="./posters/home.png" class="iphone-screen" alt="iPhone 15 Screenshot">
-                  <img src="./posters/code.png" class="iphone-screen" alt="iPhone 15 Screenshot">
-                </div>
-                <div class="card-content animation-element">
-                  <h3  class="title">
-                      Dirty Dog's Car Wash
-                  </h3>
-                  <div class="tags">
-                      <div class="tag">React Native</div>
-                      <div class="tag">Expo</div>
-                      <div class="tag">Firestore</div>
-                      <div class="tag">MobX</div>
-                      <div class="tag">GCP</div>
-                  </div>
-                  <p class="text">
-                    Spearheaded the development of a proprietary customer engagement and membership app, and an admin portal for Dirty Dog's Car Wash, an Atlanta-based private equity-backed company. This project involved end-to-end management, from planning and development to delivery.
-                      <br>
-                      <br>
-                    <a download href="./tate_larkin_resume.pdf">
-                      <strong><p class="source-private">See resume <i class="fa-solid fa-download"></i></p></strong>
-                    </a>
-                  </p>
-              </div>
-              </div>
-                
-                <div class="project-card">
-                    <div class="fresh-carousel carousel animation-element">
-                      <img class="carousel-image" />
-                      <div class="loader hidden"></div>
-                      <i class="fa-solid fa-circle-chevron-right carousel-next noselect"></i>
-                      <div class="carousel-dots noselect">
-                        <span class="dot active noselect"></span> 
-                        <span class="dot noselect"></span>
-                        <span class="dot noselect"></span>
-                      </div>
-                  </div>
-                    <div class="card-content animation-element">
-                        <h3  class="title">
-                            User Access Review
-                        </h3>
-                        <div class="tags">
-                            <div class="tag">Chrome API</div>
-                            <div class="tag">Firebase RTD</div>
-                            <div class="tag">OAuth 2.0</div>
-                            <div class="tag">Regex</div>
-                            <div class="tag">Jasmine</div>
-                            <div class="tag">Bitbucket Pipelines</div>
-                        </div>
-                        <p class="text">
-                          Worked directly with the CTO of <strong class="link"><a target="_blank" rel="noopener noreferrer" href="https://www.freshconsulting.com/">Fresh Consulting</a></strong> to define parameters, develop an appropriate database schema, and code a Chrome Extension to manage employee SaaS subscriptions by parsing their websites for user emails
-                          <br>
-                          <br>
-                          <a download href="./tate_larkin_resume.pdf">
-                          <strong><p class="source-private">See resume <i class="fa-solid fa-download"></i></p></strong>
-                          </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                  <div class="circuit-carousel carousel animation-element">
-                    <img class="carousel-image" />
-                    <div class="loader hidden"></div>
-                    <i class="fa-solid fa-circle-chevron-right carousel-next noselect"></i>
-                    <div class="carousel-dots noselect">
-                      <span class="dot active noselect"></span> 
-                      <span class="dot noselect"></span>
-                      <span class="dot noselect"></span>
-                    </div>
-                </div>
-                  <div class="card-content animation-element">
-                      <h3  class="title">
-                          Circuit Craft
-                      </h3>
-                      <div class="tags">
-                          <div class="tag">Qt</div>
-                          <div class="tag">C++</div>
-                          <div class="tag">Box2D</div>
-                          <div class="tag">WebAssembly</div>
-                      </div>
-                      <p class="text">
-                        Worked in a Scrum team of 6 and then solo to develop an educational app teaching digital circuit design basics. Used C++ and Qt to create an intuitive event driven architecture for efficient circuit simulation. Used Agile, Scrum, and Kanban methods for the software.
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" href="https://tate8.itch.io/circuit-craft">
-                          <strong><p class="source-private">View on Itch.io <i class="fa-solid fa-up-right-from-square"></i></p></strong>
-                        </a>
-                      </p>
-                  </div>
-              </div>
-
-                <div class="project-card">
-                    <div class="video-container animation-element">
-                        <video poster="./posters/cards.png" preload="metadata" src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4" controls="controls" muted="muted" class="video"></video>
-                    </div>
-                    <div class="card-content animation-element">
-                        <h3  class="title">
-                            AI Flashcards
-                        </h3>
-                        <div class="tags">
-                            <div class="tag">Flask</div>
-                            <div class="tag">Tensorflow</div>
-                            <div class="tag">Keras</div>
-                            <div class="tag">Numpy</div>
-                            <div class="tag">Matplotlib</div>
-                        </div>
-                        <p class="text">
-                            Developed an educational website for young kids studying basic vocabulary. Used computer vision with 
-                            a Convolutional Neural Network to detect drawn items. Simply draw a picture 
-                            of the word on the front on a flashcard, and find out if you drew it right!
-                            <br>
-                            <br>
-                            Took 2nd place at the Utah TSA Competition in Software Development
-                            <br>
-                            <br>
-                            <strong>
-                                <a target="_blank" rel="noopener noreferrer" class="learn-more" href="https://github.com/tate8/AI-flashcards">
-                                    Learn more<i class="fa-solid fa-up-right-from-square"></i>
-                                </a>
-                            </strong>
-                        </p>
-                    </div>
-                </div>
-        
-        </section>
-        
-
-        <section id="footer">
-            <div class="footer-grid">
-                <div class="email-block">
-                    <h2 class="email-label">Get in touch</h2>
-                    <a href="mailto:tatelarkin@icloud.com" class="email">tatelarkin@icloud.com</a>
-                </div>
-                <div class="social-block">
-                    <h2 class="social-label">Lets connect</h2>
-                    <div class="social-items">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tate-larkin-8059b520a/" class="social">Linkedin</a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/tate8" class="social">Github</a>
-                        <a target="_blank" rel="noopener noreferrer" download href="./tate_larkin_resume.pdf" class="social">Resume</a>
-                    </div>
-                </div>
-                <h3 class="created-by">Made with ❤️ | Tate Larkin</h3>
-                <small class="copyright">&copy; Copyright 2024</small>
-            </div>
-        </section>
+      </div>
     </div>
-</body>
+    <div class="intro-container" id="intro">
+      <div class="site-container">
+        <h1 class="about">
+          <strong class="emphasis">Tate Larkin</strong>. Developer with a
+          passion for building intelligent systems.
+          <br />
+          <strong class="accent-text">Driven to succeed</strong>, learn new
+          skills and contribute to organizational success. <br /><br />
+          I teach machines how to <strong class="accent-text">think</strong>.
+        </h1>
+
+        <div class="intro-to-contact-container">
+          <a href="#footer" class="download-resume-text link"> Contact</a>
+          <a
+            download
+            href="./tate_larkin_resume.pdf"
+            class="intro-to-contact-text link"
+          >
+            Resume<i
+              class="fa-solid fa-download intro-to-contact-arrow arrow"
+            ></i>
+          </a>
+        </div>
+        <div class="scroll-down-container">
+          <a href="#projects"
+            ><i class="fa-solid fa-angle-down scroll-down-icon"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <section id="projects">
+      <div class="site-container">
+        <p class="projects-title"><strong>Featured Projects</strong></p>
+        <div class="projects">
+          <div class="app-project-card">
+            <div class="iphone-screens animation-element">
+              <img
+                src="./posters/redeem.png"
+                class="iphone-screen"
+                alt="iPhone 15 Screenshot"
+              />
+              <img
+                src="./posters/home.png"
+                class="iphone-screen"
+                alt="iPhone 15 Screenshot"
+              />
+              <img
+                src="./posters/code.png"
+                class="iphone-screen"
+                alt="iPhone 15 Screenshot"
+              />
+            </div>
+            <div class="card-content animation-element">
+              <h2 class="title">Dirty Dog's Car Wash</h2>
+              <div class="tags">
+                <div class="tag"><small>React Native</small></div>
+                <div class="tag"><small>Expo</small></div>
+                <div class="tag"><small>Firestore</small></div>
+                <div class="tag"><small>MobX</small></div>
+                <div class="tag"><small>GCP</small></div>
+              </div>
+              <p class="text">
+                Spearheaded the development of a proprietary customer engagement
+                and membership app, and an admin portal for Dirty Dog's Car
+                Wash, an Atlanta-based private equity-backed company. This
+                project involved end-to-end management, from planning and
+                development to delivery.
+                <br />
+                <br />
+                <a download href="./tate_larkin_resume.pdf">
+                  <strong
+                    ><p class="source-private">
+                      See resume <i class="fa-solid fa-download"></i></p
+                  ></strong>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="fresh-carousel carousel animation-element">
+              <img class="carousel-image" />
+              <div class="loader hidden"></div>
+              <i
+                class="fa-solid fa-circle-chevron-right carousel-next noselect"
+              ></i>
+              <div class="carousel-dots noselect">
+                <span class="dot active noselect"></span>
+                <span class="dot noselect"></span>
+                <span class="dot noselect"></span>
+              </div>
+            </div>
+            <div class="card-content animation-element">
+              <h2 class="title">User Access Review</h2>
+              <div class="tags">
+                <div class="tag"><small>Chrome API</small></div>
+                <div class="tag"><small>Firebase RTD</small></div>
+                <div class="tag"><small>OAuth 2.0</small></div>
+                <div class="tag"><small>Regex</small></div>
+                <div class="tag"><small>Jasmine</small></div>
+                <div class="tag"><small>Bitbucket Pipelines</small></div>
+              </div>
+              <p class="text">
+                Worked directly with the CTO of
+                <strong class="link"
+                  ><a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.freshconsulting.com/"
+                    >Fresh Consulting</a
+                  ></strong
+                >
+                to define parameters, develop an appropriate database schema,
+                and code a Chrome Extension to manage employee SaaS
+                subscriptions by parsing their websites for user emails
+                <br />
+                <br />
+                <a download href="./tate_larkin_resume.pdf">
+                  <strong
+                    ><p class="source-private">
+                      See resume <i class="fa-solid fa-download"></i></p
+                  ></strong>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="circuit-carousel carousel animation-element">
+              <img class="carousel-image" />
+              <div class="loader hidden"></div>
+              <i
+                class="fa-solid fa-circle-chevron-right carousel-next noselect"
+              ></i>
+              <div class="carousel-dots noselect">
+                <span class="dot active noselect"></span>
+                <span class="dot noselect"></span>
+                <span class="dot noselect"></span>
+              </div>
+            </div>
+            <div class="card-content animation-element">
+              <h2 class="title">Circuit Craft</h2>
+              <div class="tags">
+                <div class="tag"><small>Qt</small></div>
+                <div class="tag"><small>C++</small></div>
+                <div class="tag"><small>Box2D</small></div>
+                <div class="tag"><small>WebAssembly</small></div>
+              </div>
+              <p class="text">
+                Worked in a Scrum team of 6 and then solo to develop an
+                educational app teaching digital circuit design basics. Used C++
+                and Qt to create an intuitive event driven architecture for
+                efficient circuit simulation. Used Agile, Scrum, and Kanban
+                methods for the software.
+                <br />
+                <br />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://tate8.itch.io/circuit-craft"
+                >
+                  <strong
+                    ><p class="source-private">
+                      Play on Itch.io
+                      <i class="fa-solid fa-up-right-from-square"></i></p
+                  ></strong>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="video-container animation-element">
+              <video
+                poster="./posters/cards.png"
+                preload="metadata"
+                src="https://user-images.githubusercontent.com/70344865/157375281-10eefae6-e8fd-4c9b-abc8-e4d7a958380b.mp4"
+                controls="controls"
+                muted="muted"
+                class="video"
+              ></video>
+            </div>
+            <div class="card-content animation-element">
+              <h2 class="title">AI Flashcards</h2>
+              <div class="tags">
+                <div class="tag"><small>Flask</small></div>
+                <div class="tag"><small>Tensorflow</small></div>
+                <div class="tag"><small>Keras</small></div>
+                <div class="tag"><small>Numpy</small></div>
+                <div class="tag"><small>Matplotlib</small></div>
+              </div>
+              <p class="text">
+                Developed an educational website for young kids studying basic
+                vocabulary. Used computer vision with a Convolutional Neural
+                Network to detect drawn items. Simply draw a picture of the word
+                on the front on a flashcard, and find out if you drew it right!
+                <br />
+                <br />
+                Took 2nd place at the Utah TSA Competition in Software
+                Development
+                <br />
+                <br />
+                <strong>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="learn-more"
+                    href="https://github.com/tate8/AI-flashcards"
+                  >
+                    Learn more<i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="site-container">
+        <div class="footer-grid">
+          <div class="email-block">
+            <p class="email-label">Get in touch</p>
+            <a href="mailto:tatelarkin@icloud.com" class="email"
+              >tatelarkin@icloud.com</a
+            >
+          </div>
+          <div class="social-block">
+            <p class="social-label">Lets connect</p>
+            <div class="social-items">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/tate-larkin-8059b520a/"
+                class="social"
+                >Linkedin</a
+              >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/tate8"
+                class="social"
+                >Github</a
+              >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                href="./tate_larkin_resume.pdf"
+                class="social"
+                >Resume</a
+              >
+            </div>
+          </div>
+          <p class="created-by">Made with ❤️ | Tate Larkin</p>
+          <p class="copyright">&copy; Copyright 2025</p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
